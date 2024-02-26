@@ -1,0 +1,26 @@
+/* Variabler*/
+$header-footer-color:#040126;
+$font-color1:#040126;
+$font-color2: #fffafa;
+$font-color3: #ff800b;
+$papercut1: #0d056c;
+$papercut2: #3b3e9f;
+$papercut3: #63a8f1;
+$kort1: #9d9ccc;
+$kort2: #95c2f4;
+$cta: #ff800b;
+$bg: #fffafa; 
+
+/*Mixins*/
+@mixin btn($width:12.8rem, $height:3.5rem){
+    background-color: $cta;
+    border-radius:70px;
+    color:$bg;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border: 0;
+
+}
+
+
