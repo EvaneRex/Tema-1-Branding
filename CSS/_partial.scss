@@ -11,6 +11,7 @@ $kort2: #95c2f4;
 $cta: #ff800b;
 $bg: #fffafa; 
 
+
 /*Mixins*/
 @mixin btn($width:12.8rem, $height:3.5rem){
     background-color: $cta;
@@ -23,4 +24,9 @@ $bg: #fffafa;
 
 }
 
-
+/*Til Showcase*/
+@mixin border_shadow {
+    border: 5px solid $papercut2;
+    border-radius: 10px;
+    filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
+}
