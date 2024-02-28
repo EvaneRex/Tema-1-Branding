@@ -3,11 +3,11 @@
 /*Til Showcase*/
 @font-face {
   font-family: "alegreya sans";
-  src: url("../fonts/Alegreya_Sans");
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
 }
 @font-face {
   font-family: "oxygen";
-  src: url("../fonts/Oxygen");
+  src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
 }
 * {
   box-sizing: border-box;
@@ -58,13 +58,13 @@ header {
     grid-template-columns: 1fr auto auto auto auto auto auto;
     background-color: #040126;
     gap: 20px;
+    padding: 10px;
     width: 100%;
   }
   .desktop-nav a {
     text-decoration: none;
     color: #fffafa;
-    font-size: 28pt;
-    font-family: "Oxygen-Regular";
+    font-size: 22pt;
   }
 }
 /* Styling for forsiden slutter*/
