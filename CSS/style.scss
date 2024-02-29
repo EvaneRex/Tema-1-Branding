@@ -102,7 +102,7 @@ header {
 }
 
 .sc_nav{
-        .container_1, .container_2, .container_3{
+        .container_1, .container_2, .container_3, .container_4, .container_5, .container_6, .container_7{
           @include partial.sc_con1;
           background-position: center;
         }
@@ -119,6 +119,18 @@ header {
               height: 27.9rem;
               padding-top: 12.4rem;
             }
+        }
+        .container_4{
+          background-image: url(/img/sc_animationer.png)
+        }
+        .container_5{
+          background-image: url(/img/sc_maskotter.png)
+        }
+        .container_6{
+          background-image: url(/img/sc_videoer.png)
+        }
+        .container_7{
+          /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
         }
 
 

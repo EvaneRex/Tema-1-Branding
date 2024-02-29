@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variabler*/
 /*Mixins*/
 /*Til Showcase*/
@@ -76,7 +77,7 @@ header {
   align-content: center;
 }
 
-.sc_nav .container_1, .sc_nav .container_2, .sc_nav .container_3 {
+.sc_nav .container_1, .sc_nav .container_2, .sc_nav .container_3, .sc_nav .container_4, .sc_nav .container_5, .sc_nav .container_6, .sc_nav .container_7 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -99,6 +100,18 @@ header {
   height: 27.9rem;
   padding-top: 12.4rem;
 }
+.sc_nav .container_4 {
+  background-image: url(/img/sc_animationer.png);
+}
+.sc_nav .container_5 {
+  background-image: url(/img/sc_maskotter.png);
+}
+.sc_nav .container_6 {
+  background-image: url(/img/sc_videoer.png);
+}
+.sc_nav .container_7 {
+  /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
+}
 .sc_nav .sc_text {
   width: 17.2rem;
   height: 12.8rem;
@@ -119,6 +132,7 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Alegreya sans";
+  padding: 3em;
 }
 .sc_nav .sc_text:hover {
   background-color: #3b3e9f;

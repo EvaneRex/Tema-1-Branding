@@ -57,6 +57,7 @@ $fontHeadings: "AlegreyaSans-Regular";
     font-size: 1.5rem;
     font-weight: bold;
     font-family: "Alegreya sans";
+    padding: 3em;//skal rettes til mere, skal justeres til hver container!!
 }
 
 @mixin sc_hover {
