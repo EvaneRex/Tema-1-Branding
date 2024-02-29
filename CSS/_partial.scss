@@ -43,20 +43,20 @@ $fontHeadings: "AlegreyaSans-Regular";
     width: $width;
     height: $height;
 }
-@mixin sc_text ($width:17.2rem, $height:12.8rem, $padding-top:4.6rem) {
+@mixin sc_text ($width:17.2rem, $height:12.8rem, $padding-top:5.1rem) {
     width: $width;
     height: $height;
     padding-top: $padding-top;
     text-align: center;
 }
 
-@mixin sc_a {
+@mixin sc_a ($padding: 5rem 4.5rem 5rem 4.5rem) {
     text-decoration: none;
     color: $font-color3;
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: "Alegreya sans";
-    padding: 3em;//skal rettes til mere, skal justeres til hver container!!
+    font-family: $fontBroedText;
+    padding: $padding;
 }
 
 @mixin sc_hover {
