@@ -39,7 +39,7 @@ $fontHeadings: "AlegreyaSans-Regular";
 @mixin sc_con1 ($width:17.2rem, $height:12.8rem){
     object-fit: cover;
     border-radius: 10px;
-    margin: 0.5em;
+    margin: 2rem 0.5em;
     width: $width;
     height: $height;
 }
