@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variabler*/
 /*Mixins*/
 /*Til Showcase*/
@@ -97,13 +98,40 @@ header {
   align-content: center;
 }
 
-.sc_nav .container_1 {
-  background-image: url(/img/sc_hjemmeside.png);
-  object-fit: cover;
+.sc_nav .container_1, .sc_nav .container_2, .sc_nav .container_3, .sc_nav .container_4, .sc_nav .container_5, .sc_nav .container_6, .sc_nav .container_7 {
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin: 0.5em;
   width: 17.2rem;
   height: 12.8rem;
+  background-position: center;
+}
+.sc_nav .container_1 {
+  background-image: url(/img/sc_hjemmeside.png);
+}
+.sc_nav .container_2 {
+  background-image: url(/img/sc_logo.png);
+}
+.sc_nav .container_3 {
+  background-image: url(/img/sc_poster.png);
+  height: 27.9rem;
+}
+.sc_nav .container_3 .sc_text {
+  height: 27.9rem;
+  padding-top: 12.4rem;
+}
+.sc_nav .container_4 {
+  background-image: url(/img/sc_animationer.png);
+}
+.sc_nav .container_5 {
+  background-image: url(/img/sc_maskotter.png);
+}
+.sc_nav .container_6 {
+  background-image: url(/img/sc_videoer.png);
+}
+.sc_nav .container_7 {
+  /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
 }
 .sc_nav .sc_text {
   color: #ff800b;
@@ -114,8 +142,10 @@ header {
   border: 5px solid #3b3e9f;
   border-radius: 10px;
   background: rgba(59, 62, 159, 0.5); /*giver et farveoverlay med mindsket opacitet*/
-  backdrop-filter: blur(12.5px);
-  object-fit: cover;
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: drop-shadow(-8px 8px 4px rgba(0, 0, 0, 0.25));
 }
 .sc_nav .sc_text .container_1 a {
@@ -125,6 +155,4 @@ header {
   background-color: #3b3e9f;
   color: #fffafa;
   transition: 0.3s ease-in-out;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

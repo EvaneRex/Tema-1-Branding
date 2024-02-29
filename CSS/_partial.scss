@@ -52,6 +52,15 @@ $fontHeadings: "AlegreyaSans-Regular";
     height: 12.8rem;
 }
 
+@mixin sc_a {
+    text-decoration: none;
+    color: $font-color3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Alegreya sans";
+    padding: 3em;//skal rettes til mere, skal justeres til hver container!!
+}
+
 @mixin sc_hover {
     background-color: $papercut2;
     color: $bg;

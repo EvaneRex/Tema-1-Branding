@@ -138,26 +138,51 @@ header {
 }
 
 .sc_nav {
-
-  .container_1 {
-    background-image: url(/img/sc_hjemmeside.png);
-    @include partial.sc_con1;
-
-  }
-
-  .sc_text {
-    @include partial.sc_text;
-    @include partial.border_shadow;
-
-
-    .container_1 a {
-      text-decoration: none;
+    .container_1, .container_2, .container_3, .container_4, .container_5, .container_6, .container_7{
+      @include partial.sc_con1;
+      background-position: center;
     }
-
-    &:hover {
-      @include partial.sc_hover;
+    .container_1{
+        background-image: url(/img/sc_hjemmeside.png);
     }
-  }
+    .container_2{
+      background-image: url(/img/sc_logo.png);
+    }
+    .container_3{
+      background-image: url(/img/sc_poster.png);
+      height: 27.9rem;
+
+        .sc_text{
+          height: 27.9rem;
+          padding-top: 12.4rem;
+        }
+    }
+    .container_4{
+      background-image: url(/img/sc_animationer.png)
+    }
+    .container_5{
+      background-image: url(/img/sc_maskotter.png)
+    }
+    .container_6{
+      background-image: url(/img/sc_videoer.png)
+    }
+    .container_7{
+      /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
+    }
+    
+    .sc_text {
+      @include partial.sc_text;
+      @include partial.border_shadow;
+
+
+        .container_1 a {
+          text-decoration: none;
+        }
+
+        &:hover {
+          @include partial.sc_hover;
+        }
+    }
 
 
 }
