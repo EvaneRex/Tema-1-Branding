@@ -40,16 +40,21 @@ $fontHeadings: "AlegreyaSans-Regular";
     object-fit: cover;
     border-radius: 10px;
     margin: 0.5em;
-    width: 17.2rem;
-    height: 12.8rem;
+    width: $width;
+    height: $height;
 }
 
 @mixin sc_text ($width:17.2rem, $height:12.8rem, $padding-top:4.6rem) {
-    color: $font-color3;
-    font-size: 1.25rem;
+    width: $width;
+    height: $height;
+    padding-top: $padding-top;
+}
+
+@mixin sc_a {
+    text-decoration: none;
     text-align: center;
-    width: 17.2rem;
-    height: 12.8rem;
+    color: $font-color3;
+    font-size: 1.5rem;
 }
 
 @mixin sc_hover {

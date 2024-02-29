@@ -113,24 +113,14 @@ header {
             @include partial.sc_text;
             @include partial.border_shadow;
 
-            
-
-            .container_1 a{
-                text-decoration: none;
+            a{
+              @include partial.sc_a;
             }
 
             &:hover{
                 @include partial.sc_hover;
             }
-        }
-
-        
-
-        
-
-        
-       
-       
+        }    
 }
 
 
