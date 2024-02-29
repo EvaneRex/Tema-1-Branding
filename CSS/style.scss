@@ -7,4 +7,47 @@
 }
 
 
-/*--------------Showcase--------------*/
+/*-------------Showcase--------------------*/
+
+.sc_BG{
+    background-color: partial.$bg;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.sc_nav{
+
+        .container_1{
+            background-image: url(/img/sc_hjemmeside.png);
+            @include partial.sc_con1;
+                
+        }
+
+        .sc_text{
+            @include partial.sc_text;
+            @include partial.border_shadow;
+
+            
+
+            .container_1 a{
+                text-decoration: none;
+            }
+
+            &:hover{
+                @include partial.sc_hover;
+            }
+        }
+
+        
+
+        
+
+        
+       
+       
+}
+
+
+
+

@@ -11,7 +11,6 @@ $kort2: #95c2f4;
 $cta: #ff800b;
 $bg: #fffafa; 
 
-
 /*Mixins*/
 @mixin btn($width:12.8rem, $height:3.5rem){
     background-color: $cta;
@@ -28,6 +27,30 @@ $bg: #fffafa;
 @mixin border_shadow {
     border: 5px solid $papercut2;
     border-radius: 10px;
-    background: rgba(59, 62, 159, 0.50); /*måske giver det layerblur, tester det når det kommer*/
+    background: rgba(59, 62, 159, 0.50); /*giver et farveoverlay med mindsket opacitet*/
+    backdrop-filter: blur(12.5px);
+    object-fit: cover;
     filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
+}
+
+@mixin sc_con1 ($width:17.2rem, $height:12.8rem){
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0.5em;
+    width: 17.2rem;
+    height: 12.8rem;
+}
+
+@mixin sc_text ($width:17.2rem, $height:12.8rem, $padding-top:4.6rem) {
+    color: $font-color3;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 17.2rem;
+    height: 12.8rem;
+}
+
+@mixin sc_hover {
+    background-color: $papercut2;
+    color: $bg;
+    transition: 0.3s ease-in-out;
 }

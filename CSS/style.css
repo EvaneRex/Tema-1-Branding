@@ -7,4 +7,43 @@
   padding: 0;
 }
 
-/*--------------Showcase--------------*//*# sourceMappingURL=style.css.map */
+/*-------------Showcase--------------------*/
+.sc_BG {
+  background-color: #fffafa;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.sc_nav .container_1 {
+  background-image: url(/img/sc_hjemmeside.png);
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin: 0.5em;
+  width: 17.2rem;
+  height: 12.8rem;
+}
+.sc_nav .sc_text {
+  color: #ff800b;
+  font-size: 1.25rem;
+  text-align: center;
+  width: 17.2rem;
+  height: 12.8rem;
+  border: 5px solid #3b3e9f;
+  border-radius: 10px;
+  background: rgba(59, 62, 159, 0.5); /*giver et farveoverlay med mindsket opacitet*/
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: drop-shadow(-8px 8px 4px rgba(0, 0, 0, 0.25));
+}
+.sc_nav .sc_text .container_1 a {
+  text-decoration: none;
+}
+.sc_nav .sc_text:hover {
+  background-color: #3b3e9f;
+  color: #fffafa;
+  transition: 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
