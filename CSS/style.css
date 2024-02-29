@@ -127,7 +127,8 @@ header {
 }
 
 .sc_nav .container_1, .sc_nav .container_2, .sc_nav .container_3, .sc_nav .container_4, .sc_nav .container_5, .sc_nav .container_6, .sc_nav .container_7 {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
   margin: 0.5em;
   width: 17.2rem;
@@ -168,17 +169,22 @@ header {
   border: 5px solid #3b3e9f;
   border-radius: 10px;
   background: rgba(59, 62, 159, 0.5); /*giver et farveoverlay med mindsket opacitet*/
-  backdrop-filter: blur(12.5px);
-  object-fit: cover;
+  -webkit-backdrop-filter: blur(12.5px);
+          backdrop-filter: blur(12.5px);
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: drop-shadow(-8px 8px 4px rgba(0, 0, 0, 0.25));
 }
-.sc_nav .sc_text .container_1 a {
+.sc_nav .sc_text a {
   text-decoration: none;
+  color: #ff800b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Alegreya sans";
+  padding: 3em;
 }
 .sc_nav .sc_text:hover {
   background-color: #3b3e9f;
   color: #fffafa;
   transition: 0.3s ease-in-out;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
