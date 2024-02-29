@@ -51,7 +51,7 @@ header {
   height: 500px;
   background: linear-gradient(to bottom, #040126, #3B3E9F, #63A8F1, #FFFFFF);
 }
-.logo-animation-section img, .logo-animation-section #mds, .logo-animation-section #slogan {
+.logo-animation-section img, .logo-animation-section #mds-heading, .logo-animation-section #slogan {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -60,7 +60,7 @@ header {
 .logo-animation-section img {
   padding-top: 100px;
 }
-.logo-animation-section #mds {
+.logo-animation-section #mds-heading {
   font-size: 28px;
   font-family: "AlegreyaSans-Regular";
   color: #ff800b;
@@ -78,11 +78,18 @@ header {
 }
 
 #papercut-right {
-  float: right;
+  justify-self: right;
+}
+
+#hvem-er-vi {
+  font-size: 24pt;
+  color: #040126;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 #papercut-left {
-  float: left;
+  justify-self: left;
 }
 
 #peafowl {
@@ -150,6 +157,15 @@ video {
   }
   .mobile-nav {
     display: none;
+  }
+  .logo-animation-section #mds-heading {
+    font-size: 44pt;
+  }
+  .logo-animation-section #slogan {
+    font-size: 38pt;
+  }
+  #hvem-er-vi {
+    font-size: 44pt;
   }
 }
 /* header ends*/
