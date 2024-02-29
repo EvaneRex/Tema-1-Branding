@@ -1,12 +1,73 @@
 /* Variabler*/
 /*Mixins*/
 /*Til Showcase*/
+@font-face {
+  font-family: "alegreya sans";
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+@font-face {
+  font-family: "oxygen";
+  src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Header- navigations bar */
+header {
+  position: sticky;
+  top: 0;
+}
+
+/*Header ending*/
+/* Styling for forsiden*/
+.body-forside {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.mobile-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color: #040126;
+  width: 100%;
+  height: 100%;
+}
+.mobile-nav img {
+  margin: 0 auto;
+  padding: 10px;
+}
+.mobile-nav .icons {
+  margin-top: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .mobile-nav {
+    display: none;
+  }
+  .desktop-nav ul {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto auto auto;
+    background-color: #040126;
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+  }
+  .desktop-nav a {
+    text-decoration: none;
+    color: #fffafa;
+    font-size: 22pt;
+  }
+}
+/* Styling for forsiden slutter*/
 /*-------------Showcase--------------------*/
 .sc_BG {
   background-color: #fffafa;

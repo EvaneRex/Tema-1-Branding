@@ -9,7 +9,9 @@ $papercut3: #63a8f1;
 $kort1: #9d9ccc;
 $kort2: #95c2f4;
 $cta: #ff800b;
-$bg: #fffafa; 
+$bg: #fffafa;
+$fontBroedText:"Oxygen-Regular";
+$fontHeadings: "AlegreyaSans-Regular";
 
 /*Mixins*/
 @mixin btn($width:12.8rem, $height:3.5rem){
@@ -20,6 +22,7 @@ $bg: #fffafa;
     text-align: center;
     padding: 5px;
     border: 0;
+    font-family: $fontBroedText;
 
 }
 
