@@ -83,6 +83,7 @@ header {
   margin: 0.5em;
   width: 17.2rem;
   height: 12.8rem;
+  background-position: center;
 }
 .sc_nav .container_1 {
   background-image: url(/img/sc_hjemmeside.png);
@@ -96,6 +97,7 @@ header {
 }
 .sc_nav .container_3 .sc_text {
   height: 27.9rem;
+  padding-top: 12.4rem;
 }
 .sc_nav .sc_text {
   width: 17.2rem;

@@ -104,10 +104,10 @@ header {
 .sc_nav{
         .container_1, .container_2, .container_3{
           @include partial.sc_con1;
+          background-position: center;
         }
         .container_1{
             background-image: url(/img/sc_hjemmeside.png);
-                
         }
         .container_2{
           background-image: url(/img/sc_logo.png);
@@ -117,6 +117,7 @@ header {
           height: 27.9rem;
             .sc_text{
               height: 27.9rem;
+              padding-top: 12.4rem;
             }
         }
 
