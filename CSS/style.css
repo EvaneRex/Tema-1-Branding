@@ -76,14 +76,26 @@ header {
   align-content: center;
 }
 
-.sc_nav .container_1 {
-  background-image: url(/img/sc_hjemmeside.png);
+.sc_nav .container_1, .sc_nav .container_2, .sc_nav .container_3 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
   margin: 0.5em;
   width: 17.2rem;
   height: 12.8rem;
+}
+.sc_nav .container_1 {
+  background-image: url(/img/sc_hjemmeside.png);
+}
+.sc_nav .container_2 {
+  background-image: url(/img/sc_logo.png);
+}
+.sc_nav .container_3 {
+  background-image: url(/img/sc_poster.png);
+  height: 27.9rem;
+}
+.sc_nav .container_3 .sc_text {
+  height: 27.9rem;
 }
 .sc_nav .sc_text {
   width: 17.2rem;

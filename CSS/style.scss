@@ -102,12 +102,24 @@ header {
 }
 
 .sc_nav{
-
+        .container_1, .container_2, .container_3{
+          @include partial.sc_con1;
+        }
         .container_1{
             background-image: url(/img/sc_hjemmeside.png);
-            @include partial.sc_con1;
                 
         }
+        .container_2{
+          background-image: url(/img/sc_logo.png);
+        }
+        .container_3{
+          background-image: url(/img/sc_poster.png);
+          height: 27.9rem;
+            .sc_text{
+              height: 27.9rem;
+            }
+        }
+
 
         .sc_text{
             @include partial.sc_text;
