@@ -24,15 +24,6 @@ header {
 }
 
 
-/*Header ending*/
-
-/* Styling for forsiden*/
-
-.body-forside {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
 .mobile-nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -53,7 +44,24 @@ header {
     margin-top: 25px;
   }
 }
+/*Header ending*/
 
+/* Styling for forsiden*/
+
+.body-forside {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+/* Styling for forsiden slutter*/
+
+
+
+/* media query for desktop version */
+
+/* for header*/
 @media screen and (max-width: 1200px) {
   .desktop-nav {
     display: none;
@@ -114,7 +122,11 @@ header {
 
 }
 
-/* Styling for forsiden slutter*/
+/* header ends*/
+
+
+
+
 
 /*-------------Showcase--------------------*/
 
