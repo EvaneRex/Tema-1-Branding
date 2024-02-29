@@ -169,14 +169,14 @@ header {
     .container_7{
       /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
     }
-    
+
     .sc_text {
       @include partial.sc_text;
       @include partial.border_shadow;
 
 
-        .container_1 a {
-          text-decoration: none;
+        a {
+          @include partial.sc_a
         }
 
         &:hover {

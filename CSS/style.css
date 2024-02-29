@@ -134,11 +134,10 @@ header {
   /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
 }
 .sc_nav .sc_text {
-  color: #ff800b;
-  font-size: 1.25rem;
-  text-align: center;
   width: 17.2rem;
   height: 12.8rem;
+  padding-top: 4.6rem;
+  text-align: center;
   border: 5px solid #3b3e9f;
   border-radius: 10px;
   background: rgba(59, 62, 159, 0.5); /*giver et farveoverlay med mindsket opacitet*/
@@ -148,8 +147,13 @@ header {
      object-fit: cover;
   filter: drop-shadow(-8px 8px 4px rgba(0, 0, 0, 0.25));
 }
-.sc_nav .sc_text .container_1 a {
+.sc_nav .sc_text a {
   text-decoration: none;
+  color: #ff800b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Alegreya sans";
+  padding: 3em;
 }
 .sc_nav .sc_text:hover {
   background-color: #3b3e9f;
