@@ -67,70 +67,87 @@ header {
 @media screen and (min-width: 1201px) {
   .desktop-nav {
 
+    ul {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto auto;
+      background-color: partial.$header-footer-color;
+      gap: 20px;
+      width: 100%;
+    }
+
+    img {
+      padding: 15px;
+    }
+
+    .nav {
+      list-style: none;
+      padding-top: 65px;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: partial.$font-color2;
+      font-size: 22pt;
+    }
+
+    input {
+      border-radius: 50px;
+      height: 25px;
+      width: 200px;
+      padding: 15px;
+      background-color: transparent;
+      color: partial.$font-color2;
+      font-size: 22px;
+      font-family: partial.$fontHeadings;
+      border: 2px solid partial.$font-color2;
+      margin: 65px 15px 0 15px;
+
+    }
+
   }
 
   .mobile-nav {
     display: none;
   }
-  .desktop-nav ul {
-    display: grid;
-    grid-template-columns: 1fr auto auto auto auto auto auto;
-    background-color: partial.$header-footer-color;
-    gap: 20px;
-    padding: 10px;
 
-    width: 100%;
-  }
 
-  .desktop-nav a {
-    text-decoration: none;
-    color: partial.$font-color2;
-    font-size: 22pt;
-
-  }
 }
 
 /* Styling for forsiden slutter*/
 
 /*-------------Showcase--------------------*/
 
-.sc_BG{
-    background-color: partial.$bg;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+.sc_BG {
+  background-color: partial.$bg;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
-.sc_nav{
+.sc_nav {
 
-        .container_1{
-            background-image: url(/img/sc_hjemmeside.png);
-            @include partial.sc_con1;
-                
-        }
+  .container_1 {
+    background-image: url(/img/sc_hjemmeside.png);
+    @include partial.sc_con1;
 
-        .sc_text{
-            @include partial.sc_text;
-            @include partial.border_shadow;
+  }
 
-            
+  .sc_text {
+    @include partial.sc_text;
+    @include partial.border_shadow;
 
-            .container_1 a{
-                text-decoration: none;
-            }
 
-            &:hover{
-                @include partial.sc_hover;
-            }
-        }
+    .container_1 a {
+      text-decoration: none;
+    }
 
-        
+    &:hover {
+      @include partial.sc_hover;
+    }
+  }
 
-        
 
-        
-       
-       
 }
 
 
