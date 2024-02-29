@@ -275,8 +275,8 @@ font-size: 44pt;
     @include partial.border_shadow;
 
 
-    .container_1 a {
-      text-decoration: none;
+    a {
+      @include partial.sc_a;
     }
 
     &:hover {
