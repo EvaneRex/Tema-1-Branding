@@ -89,6 +89,7 @@ header {
   width: 17.2rem;
   height: 12.8rem;
   padding-top: 4.6rem;
+  text-align: center;
   border: 5px solid #3b3e9f;
   border-radius: 10px;
   background: rgba(59, 62, 159, 0.5); /*giver et farveoverlay med mindsket opacitet*/
@@ -100,9 +101,10 @@ header {
 }
 .sc_nav .sc_text a {
   text-decoration: none;
-  text-align: center;
   color: #ff800b;
   font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Alegreya sans";
 }
 .sc_nav .sc_text:hover {
   background-color: #3b3e9f;

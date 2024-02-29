@@ -48,13 +48,15 @@ $fontHeadings: "AlegreyaSans-Regular";
     width: $width;
     height: $height;
     padding-top: $padding-top;
+    text-align: center;
 }
 
 @mixin sc_a {
     text-decoration: none;
-    text-align: center;
     color: $font-color3;
     font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Alegreya sans";
 }
 
 @mixin sc_hover {
