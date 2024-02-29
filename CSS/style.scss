@@ -288,6 +288,8 @@ p{
   h1, p{
     font-family: partial.$fontHeadings;
     text-align: center;
+    margin: auto;
+    padding: 1rem;
   }
 
   h1{
@@ -344,6 +346,14 @@ p{
 
   .container_7 {
     /*find måske img til branding, eller så find ud af hvorfor background color ikke virker*/
+    .sc_text {
+      height: 2.8rem;
+      padding-top: 0.2rem;
+
+      a {
+        padding: 0.2rem 4.5rem 0.2rem 4.5rem;
+      }
+    }  
   }
 
   .sc_text {
@@ -359,8 +369,6 @@ p{
       @include partial.sc_hover;
     }
   }
-
-
 }
 
 
