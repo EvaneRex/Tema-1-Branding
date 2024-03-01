@@ -574,7 +574,7 @@ img:first-of-type{
           .sc_text{
             @include partial.sc_text_m;
 
-            .sc_a{
+            a{
               @include partial.sc_a_m;
             }
           }
@@ -586,7 +586,7 @@ img:first-of-type{
         .sc_text{
           @include partial.sc_text_m;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
           }
         }
@@ -606,9 +606,9 @@ img:first-of-type{
           width: 26.8rem;
           padding-top: 20rem;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
-
+            padding: 20rem 9rem;
           }
         }
       }
@@ -619,7 +619,7 @@ img:first-of-type{
         .sc_text{
           @include partial.sc_text_m;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
           }
         }
@@ -631,7 +631,7 @@ img:first-of-type{
         .sc_text{
           @include partial.sc_text_m;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
           }
         }
@@ -645,7 +645,7 @@ img:first-of-type{
           height: 20rem;
           width: 56.2rem;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
           }
         }
@@ -662,9 +662,9 @@ img:first-of-type{
           @include partial.sc_text_m;
           height: 7.1rem;
           width: 56.2rem;
-          padding-top: 2.1rem;
+          padding-top: 1.5rem;
 
-          .sc_a{
+          a{
             @include partial.sc_a_m;
           }
         }

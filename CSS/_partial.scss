@@ -89,13 +89,13 @@ $fontHeadings: "AlegreyaSans-Regular";
     width: $width;
     height: $height;
 }
-@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8.5rem){
+@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8rem){
     width: $width;
     height: $height;
     padding-top: $paddingtop;
     text-align: center;
 }
-@mixin sc_a_m ($padding: 5rem 4.5rem 5rem 4.5rem) {
+@mixin sc_a_m ($padding: 7rem 5.5rem 7rem 5.5rem) {
     text-decoration: none;
     color: $font-color3;
     font-size: 2.5rem;
