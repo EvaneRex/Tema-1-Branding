@@ -13,6 +13,16 @@ $bg: #fffafa;
 $fontBroedText:"Oxygen-Regular";
 $fontHeadings: "AlegreyaSans-Regular";
 
+@font-face {
+    font-family: "AlegreyaSans-Regular";
+    src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oxygen-Regular";
+    src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
+}
+
 /*Mixins*/
 @mixin btn($width:12.8rem, $height:3.5rem){
     background-color: $cta;
