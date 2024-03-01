@@ -47,7 +47,7 @@ $fontHeadings: "AlegreyaSans-Regular";
 @mixin border_shadow {
     border: 5px solid $papercut2;
     border-radius: 10px;
-    background: rgba(59, 62, 159, 0.50); /*giver et farveoverlay med mindsket opacitet*/
+    background: rgba(59, 62, 159, 0.70); /*giver et farveoverlay med mindsket opacitet*/
     backdrop-filter: blur(12.5px);
     object-fit: cover;
     filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
@@ -80,4 +80,26 @@ $fontHeadings: "AlegreyaSans-Regular";
     background-color: $papercut2;
     color: $bg;
     transition: 0.3s ease-in-out;
+}
+/*---------mixin til Showcase til @media screen and (min-width: 1201px)-------*/
+@mixin sc_con_m ($width:26.8rem, $height:20rem){
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 2rem 0.5rem;
+    width: $width;
+    height: $height;
+}
+@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8.5rem){
+    width: $width;
+    height: $height;
+    padding-top: $paddingtop;
+    text-align: center;
+}
+@mixin sc_a_m ($padding: 5rem 4.5rem 5rem 4.5rem) {
+    text-decoration: none;
+    color: $font-color3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: $fontBroedText;
+    padding: $padding;
 }

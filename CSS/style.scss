@@ -1,5 +1,15 @@
 @use 'partial';
 
+@font-face {
+  font-family: "alegreya sans";
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "oxygen";
+  src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +28,8 @@ header {
 .mobile-nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
+
   background-color: partial.$header-footer-color;
   width: 100%;
 
@@ -437,11 +449,13 @@ img:first-of-type{
 /*.....styling for homepage desktop ending.....*/
 
 
+
 /*-------------Showcase--------------------*/
 
 .sc_BG {
   background-color: partial.$bg;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
 
