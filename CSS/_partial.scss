@@ -81,7 +81,7 @@ $fontHeadings: "AlegreyaSans-Regular";
     color: $bg;
     transition: 0.3s ease-in-out;
 }
-/*---------mixin til Showcase til @media screen and (min-width: 1201px)-------*/
+/*--------------mixin til Showcase til @media screen and (min-width: 1201px)-------------*/
 @mixin sc_con_m ($width:26.8rem, $height:20rem){
     object-fit: cover;
     border-radius: 10px;

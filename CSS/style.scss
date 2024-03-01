@@ -581,13 +581,13 @@ height: 20rem;
 width: 17.2rem;
 overflow: scroll;
 
-
   div{
     height: 20rem;
     width: 17.2rem;
     border: 5px solid partial.$papercut2;
     border-radius: 10px;
     padding: 0.5rem;
+    
     
 
     p{
@@ -603,7 +603,10 @@ overflow: scroll;
   }
 }
 
-/*-----------Showcase media---------------------*/
+/*-----------------Showcase media---------------------*/
+@media only screen and (min-width: 901px) and (max-width:1200px)
+
+/*-------Fra 1201px-------*/
 @media screen and (min-width: 1201px) {
   .sc_BG {
     justify-content: center;
@@ -617,7 +620,7 @@ overflow: scroll;
         font-size: 1.5rem;
       }
 
-    /*---------billedenavigationen------------*/
+    /*------billedenavigationen-----*/
     .sc_nav {
       margin: 0.5rem auto;
       display: grid;
@@ -719,7 +722,6 @@ overflow: scroll;
           }
         }
       }
-
     }
   }
 }
