@@ -472,9 +472,10 @@ video {
 
   h1, p {
     text-align: center;
-    margin: auto;
-    padding: 1rem;
+    margin:  0.5rem auto;
+    padding: 0.2rem 0.2rem;
     width: 60%;
+    color: partial.$font-color1;
   }
 
   h1 {
@@ -491,7 +492,7 @@ video {
 
 /*Styling af billed/navigations delen af siden*/
 .sc_nav {
-  margin: auto;
+  margin: 1.5rem auto;
 
   .container_1, .container_2, .container_3, .container_4, .container_5, .container_6, .container_7 {
     @include partial.sc_con1;
@@ -564,7 +565,18 @@ video {
 /*-----------Testimonials----------------------*/
 
 .testimonials{
- width: 17.2rem; 
+margin-top: 1rem;
+  div{
+    p{
+      width: 60%;
+      font-family: partial.$fontBroedText;
+      color: partial.$font-color1;
+      font-size: 1rem;
+    }
+    p:nth-of-type(2){
+      font-weight: bold;
+    }
+  }
 }
 
 /*-----------Showcase media---------------------*/
@@ -583,7 +595,7 @@ video {
 
     /*---------billedenavigationen------------*/
     .sc_nav {
-      margin: auto;
+      margin: 1rem auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(5, 1fr);
