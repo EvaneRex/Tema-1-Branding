@@ -64,3 +64,25 @@ $fontHeadings: "AlegreyaSans-Regular";
     color: $bg;
     transition: 0.3s ease-in-out;
 }
+/*---------mixin til Showcase til @media screen and (min-width: 1201px)-------*/
+@mixin sc_con_m ($width:26.8rem, $height:20rem){
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 2rem 0.5em;
+    width: $width;
+    height: $height;
+}
+@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8rem){
+    height: $width;
+    width: $height;
+    padding-top: $paddingtop;
+    text-align: center;
+}
+@mixin sc_a_m ($padding: 5rem 4.5rem 5rem 4.5rem) {
+    text-decoration: none;
+    color: $font-color3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: $fontBroedText;
+    padding: $padding;
+}

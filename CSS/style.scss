@@ -356,6 +356,7 @@ video {
     justify-content: center;
     align-content: center;
 
+    /*---------billedenavigationen------------*/
     .sc_nav{
       margin: auto;
       display: grid;
@@ -368,6 +369,11 @@ video {
         grid-row: 1;
         height: 20rem;
         width: 26.8rem;
+
+          .sc_text{
+            height: 20rem;
+            width: 26.8rem;
+          }
       }
       .container_2{
         grid-column: 2/3;
