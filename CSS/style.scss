@@ -445,6 +445,17 @@ video {
     display: none;
   }
 
+.desktop-nav-footer{
+  //display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 300px;
+  background-color: partial.$header-footer-color;
+  bottom: 0;
+  color: partial.$font-color2;
+}
+
+
 }
 
 
