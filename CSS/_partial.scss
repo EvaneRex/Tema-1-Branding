@@ -68,13 +68,13 @@ $fontHeadings: "AlegreyaSans-Regular";
 @mixin sc_con_m ($width:26.8rem, $height:20rem){
     object-fit: cover;
     border-radius: 10px;
-    margin: 2rem 0.5em;
+    margin: 2rem 0.5rem;
     width: $width;
     height: $height;
 }
-@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8rem){
-    height: $width;
-    width: $height;
+@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8.5rem){
+    width: $width;
+    height: $height;
     padding-top: $paddingtop;
     text-align: center;
 }
