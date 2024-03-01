@@ -473,6 +473,7 @@ video {
 
 /*-------------Showcase--------------------*/
 
+/*bg og styling af tekst*/
 .sc_BG {
   background-color: partial.$bg;
   display: flex;
@@ -481,22 +482,25 @@ video {
   align-content: center;
 
   h1, p {
-    font-family: partial.$fontHeadings;
     text-align: center;
     margin: auto;
     padding: 1rem;
+    width: 60%;
   }
 
   h1 {
     font-size: 2.75rem;
+    font-family: partial.$fontHeadings;
   }
 
   p {
     font-size: 1rem;
+    font-family: partial.$fontBroedText;
   }
 
 }
 
+/*Styling af billed/navigations delen af siden*/
 .sc_nav {
   margin: auto;
 
@@ -568,11 +572,19 @@ video {
   }
 }
 
+/*-----------Showcase media---------------------*/
 @media screen and (min-width: 1201px) {
-  /*---------Showcase media-------------------*/
   .sc_BG {
     justify-content: center;
     align-content: center;
+
+      h1{
+        font-size: 4rem;
+      }
+
+      p{
+        font-size: 1.5rem;
+      }
 
     /*---------billedenavigationen------------*/
     .sc_nav {
