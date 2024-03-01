@@ -35,6 +35,13 @@ $fontHeadings: "AlegreyaSans-Regular";
     font-family: $fontBroedText;
 
 }
+@mixin a-hover {
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: $papercut3;
+    }
+}
 
 /*Til Showcase*/
 @mixin border_shadow {
