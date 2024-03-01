@@ -95,7 +95,7 @@ $fontHeadings: "AlegreyaSans-Regular";
     padding-top: $paddingtop;
     text-align: center;
 }
-@mixin sc_a_m ($padding: 7rem 5.5rem 7rem 5.5rem) {
+@mixin sc_a_m ($padding: 7rem 5.5rem) {
     text-decoration: none;
     color: $font-color3;
     font-size: 2.5rem;
