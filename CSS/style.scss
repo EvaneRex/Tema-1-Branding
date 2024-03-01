@@ -462,6 +462,7 @@ video {
 
 /*-------------Showcase--------------------*/
 
+/*bg og styling af tekst*/
 .sc_BG {
   background-color: partial.$bg;
   display: flex;
@@ -488,6 +489,7 @@ video {
 
 }
 
+/*Styling af billed/navigations delen af siden*/
 .sc_nav {
   margin: auto;
 
@@ -559,8 +561,8 @@ video {
   }
 }
 
+/*-----------Showcase media---------------------*/
 @media screen and (min-width: 1201px) {
-  /*---------Showcase media-------------------*/
   .sc_BG {
     justify-content: center;
     align-content: center;
