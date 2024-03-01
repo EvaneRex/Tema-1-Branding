@@ -194,6 +194,22 @@ video {
   }
 }
 
+/* animeret boks og papercut i bunden*/
+.mds-animation{
+
+  img:first-of-type {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+
+  }
+  img:last-of-type {
+    float: right;
+  }
+
+}
+
 
 /*.......Styling for forsiden slutter......*/
 
