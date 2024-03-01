@@ -38,6 +38,16 @@ header {
 
 /*........footer navigation .......*/
 
+.desktop-nav-footer{
+  display: none;
+}
+.mobile-nav-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+
 
 /*........footer navigation ending .......*/
 
@@ -46,6 +56,10 @@ header {
 
 .body-forside {
   background-color: partial.$bg;
+}
+.grid {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
 }
 
 /*logo animation section*/
@@ -381,6 +395,9 @@ img:first-of-type{
 
   /*footer for desktop*/
 
+.mobile-nav-footer{
+  display: none;
+}
 
 }
 
