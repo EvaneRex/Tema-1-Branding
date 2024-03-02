@@ -636,8 +636,9 @@ padding-right: 15px;
 
 .testimonial-con{
 margin: 1rem auto;
-height: 35rem;
+height: 30rem;
 width: 20rem;
+overflow: scroll;
 
   h2{
     font-family: partial.$fontHeadings;
