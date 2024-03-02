@@ -34,7 +34,7 @@ header {
   width: 100%;
 
 
-  img {
+  img, a{
 
     margin: 0 auto;
     padding: 10px;
@@ -42,6 +42,15 @@ header {
 
   .icons {
     margin-top: 25px;
+  }
+
+  .navToggle{
+     display: flex !important;
+     flex-direction: column;
+   }
+  .bars {
+    display:none;
+    cursor: pointer;
   }
 }
 
@@ -291,6 +300,11 @@ video {
     display: none;
   }
 
+}
+.mobile-nav {
+  .bars {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1201px) {
