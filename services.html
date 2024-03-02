@@ -10,7 +10,29 @@
 
 <body class="services-body">
 
+<header class="grid">
+    <nav class="mobile-nav">
+        <img class="navToggle bars icons" src="img/burgerMenu.png" alt=" trykbar burgermenu ikon">
+        <a href="index.html"><img src="img/MDS-logo.png" alt="MDS logo"></a>
+        <img class="icons" src="img/searchIcon.png" alt="soege ikon">
+    </nav>
+    <nav class="desktop-nav">
+        <ul>
+            <li><img src="img/MDS-logo.png" alt="MDS logo"></li>
+            <li class="nav"><a href="showcase.html">Showcases</a></li>
+            <li class="nav"><a href="booking.html">Booking</a></li>
+            <li class="nav"><a href="moedeos.html">Mød teamet</a></li>
+            <li class="nav"><a href="services.html">Services</a></li>
+            <li>
+                <form>
+                    <label class="visually-hidden" for="search"></label>
+                    <input placeholder="Søg " id="search" type="search" required>
+                </form>
+            </li>
+        </ul>
 
+    </nav>
+</header>
 
 <main>
     <p id="services-heading">Services</p>
@@ -44,16 +66,94 @@
             <p> Pakkeløsningen til dig, som ønsker et fuldt udviklet website, med integrerede serviceydelser</p>
             <p> Personlige præferencer <br> Logo/Maskotter <br>Grafisk design <br> Animationer <br> Visuel identitet
                 <br> Videoer </p>
+            <p> + Gratis konsultation</p>
             <a href="booking.html"> Book </a>
         </aside>
 
 
     </section>
 
+    <section class="process-guide-section">
+    <img id="mds-proces-guide" src="img/mdsProcessGuide.png" alt="proces guide">
+    </section>
 
 </main>
+<footer >
+    <nav class="mobile-nav-footer">
+        <aside>
+            <p> Sociale Medier</p>
 
+            <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
+                <img src="img/instagram.png" alt="instagram ikon">
+            </a>
+            <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
+                <img src="img/linked.png" alt="linkedin ikon">
+            </a>
+            <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
+                <img src="img/facebook.png" alt="facebook ikon">
+            </a>
+        </aside>
 
+        <aside>
+            <p> Kontakt os</p>
+            <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
+                                                                                        alt="mobil ikon"></a>
+            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"></a>
+
+        </aside>
+
+    </nav>
+
+    <nav class="desktop-nav-footer">
+        <section id="first-section">
+            <aside>
+                <p>MultiDesignStudio</p>
+                <img src="img/maskot-icon.png" alt="paefugl">
+            </aside>
+            <aside>
+                <p> Sociale medier</p>
+
+                <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
+                    <img src="img/instagram.png" alt="instagram ikon">
+                </a>
+                <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
+                    <img src="img/linked.png" alt="linkedin ikon">
+                </a>
+                <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
+                    <img src="img/facebook.png" alt="facebook ikon">
+                </a>
+            </aside>
+        </section>
+        <section id="second-section">
+            <p> Kontakt os</p>
+            <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
+                                                                                        alt="mobil ikon">+4521436587</a>
+            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"> multidesign@studio.com</a>
+            <p>CVR-nr. 4386602</p>
+        </section>
+        <section id="third-section">
+            <p>Åbningstider</p>
+            <p>Man-Tor: 08:00-16:00</p>
+            <p>Fredag: 08:00-15:30</p>
+            <p>Lørdag-søn: Lukket</p>
+        </section>
+    </nav>
+
+</footer>
+
+<script>
+    function log(message) {
+        if (console && console.log) {
+            console.log(message)
+        }
+    }
+    const navbarToggle = () => {
+        log('toggling now');
+        const nav = document.querySelector('.desktop-nav');
+        nav.classList.toggle('toggleShow');
+    }
+    document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+</script>
 
 </body>
 
