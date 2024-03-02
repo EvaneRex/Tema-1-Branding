@@ -563,38 +563,41 @@ padding-right: 15px;
 /*--------------------------------------Showcase-------------------------------------------*/
 
 /*bg og styling af tekst*/
-.sc_BG {
+.sc_body{
   background-color: partial.$bg;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
 
-  h1, h2, p {
-    margin:  0.5rem auto;
-    padding: 0.2rem 0.2rem;
-    width: 70%;
-    color: partial.$font-color1;
-  }
 
-  h1 {
-    font-size: 2.75rem;
-    font-family: partial.$fontHeadings;
-    text-align: center;
-  }
-  h2{
-    font-family: partial.$fontHeadings;
-    font-size: 2rem;
-    text-align: center;
-  }
+  .sc_BG {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 
-  p {
-    font-size: 1rem;
-    font-family: partial.$fontBroedText;
-    line-height: 1.5rem;
-    text-align: left;
-  }
+    h1, h2, p {
+      margin:  0.5rem auto;
+      padding: 0.2rem 0.2rem;
+      width: 70%;
+      color: partial.$font-color1;
+    }
 
+    h1 {
+      font-size: 2.75rem;
+      font-family: partial.$fontHeadings;
+      text-align: center;
+    }
+    h2{
+      font-family: partial.$fontHeadings;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      font-family: partial.$fontBroedText;
+      line-height: 1.5rem;
+      text-align: left;
+    }
+  }
 }
 
 /*Styling af billed/navigations delen af siden*/
@@ -671,11 +674,10 @@ padding-right: 15px;
 
 /*-------------------------------Testimonials-------------------------------*/
 
-.testimonial-con{
+.testimonial{
   margin: 1rem auto;
-  height: 30rem;
+  height: auto;
   width: 22rem;
-  
 
     div{
       height: auto;
@@ -700,9 +702,6 @@ padding-right: 15px;
       }
     }
   }  
-
-  /*-------------------------------TEST-------------------------------*/
- 
 
 /*------------------------------------------Showcase media-----------------------------------*/
 @media screen and (min-width: 700px) and (max-width:1500px){
