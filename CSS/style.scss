@@ -688,10 +688,9 @@ background-color: partial.$papercut2;
     justify-content: center;
     align-content: center;
 
-    h1, h2, p {
+    h1, h2, .p {
       margin:  0.5rem auto;
       padding: 0.2rem 0.2rem;
-      width: 70%;
       color: partial.$font-color1;
     }
 
@@ -708,7 +707,7 @@ background-color: partial.$papercut2;
       margin-top: 2rem;
     }
 
-    p {
+    .p {
       font-size: 1rem;
       font-family: partial.$fontBroedText;
       line-height: 1.5rem;
@@ -794,14 +793,10 @@ background-color: partial.$papercut2;
 /*-------------------------------Testimonials-------------------------------*/
 
 .testimonial{
-  margin: 1rem auto;
-  width: 22rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 1rem auto 2rem auto;
+
     article{
-      height: 27rem;
+      height: 22rem;
       width: 17.2rem;
       border: 5px solid partial.$papercut2;
       border-radius: 10px;
@@ -809,7 +804,10 @@ background-color: partial.$papercut2;
       margin: 1.5rem auto;
       background-color: partial.$bg;
       filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       
       p{
         width: 80%;
@@ -839,7 +837,7 @@ background-color: partial.$papercut2;
           font-size: 2.5rem;
         }
 
-        p{
+        .p{
           font-size: 1.2rem;
           line-height: 1.5rem;
           width: 50%;
@@ -896,7 +894,7 @@ background-color: partial.$papercut2;
               width: 35.8rem;
 
                 a{
-                  padding: 0.2rem 14rem 0.2rem 14rem;
+                  padding: 5rem 14rem 5rem 14rem;
                 }
             }
         }
@@ -948,6 +946,8 @@ background-color: partial.$papercut2;
     }
 
       article{
+        height: 32rem;
+        margin: auto auto;
         p{
           font-size: 1.5rem;
         }
@@ -970,9 +970,9 @@ background-color: partial.$papercut2;
         font-size: 3rem;
       }
 
-      p{
+      .p{
         font-size: 1.5rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
         width: 50%;
       }
 
@@ -1046,11 +1046,13 @@ background-color: partial.$papercut2;
         .container_6 {
           grid-column: 2/4;
           grid-row: 4;
+          height: 20rem;
+          width: 57rem;
 
           .sc_text {
             @include partial.sc_text_m;
             height: 20rem;
-            width: 56.2rem;
+            width: 57rem;
 
             a{
               @include partial.sc_a_m;
@@ -1065,12 +1067,12 @@ background-color: partial.$papercut2;
           @include partial.sc_con_m;
           background-position: center;
           height: 7.1rem;
-          width: 56.2rem;
+          width: 57rem;
 
           .sc_text {
             @include partial.sc_text_m;
             height: 7.1rem;
-            width: 56.2rem;
+            width: 57rem;
             padding-top: 1.5rem;
 
             a{
@@ -1086,9 +1088,8 @@ background-color: partial.$papercut2;
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
-
-
+        gap: 1.5rem;       
+      
         .ts_1{
           grid-column: 2;
           grid-row: 1;
@@ -1107,8 +1108,13 @@ background-color: partial.$papercut2;
         }
 
           article{
+            height: 27rem;
+            width: 26.8rem;
+            margin: 0.7rem 0.5rem;
             p{
               font-size: 1.5rem;
+              padding-top: 0.5rem;
+              line-height: 2rem;
             }
           }
         }
