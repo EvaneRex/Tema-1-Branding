@@ -33,6 +33,10 @@ $fontHeadings: "AlegreyaSans-Regular";
     padding: 5px;
     border: 0;
     font-family: $fontBroedText;
+    font-size: 18pt;
+    width: $width;
+    height: $height;
+    display:block;
 
 }
 @mixin a-hover {
