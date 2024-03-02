@@ -584,10 +584,9 @@ padding-right: 15px;
     justify-content: center;
     align-content: center;
 
-    h1, h2, p {
+    h1, h2, p, .p {
       margin:  0.5rem auto;
       padding: 0.2rem 0.2rem;
-      width: 70%;
       color: partial.$font-color1;
     }
 
@@ -604,7 +603,7 @@ padding-right: 15px;
       margin-top: 2rem;
     }
 
-    p {
+    .p {
       font-size: 1rem;
       font-family: partial.$fontBroedText;
       line-height: 1.5rem;
@@ -690,13 +689,9 @@ padding-right: 15px;
 
 .testimonial{
   margin: 1rem auto;
-  width: 22rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
     article{
-      height: 27rem;
+      height: 22rem;
       width: 17.2rem;
       border: 5px solid partial.$papercut2;
       border-radius: 10px;
@@ -704,7 +699,10 @@ padding-right: 15px;
       margin: 1.5rem auto;
       background-color: partial.$bg;
       filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
-      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       
       p{
         width: 80%;
@@ -734,7 +732,7 @@ padding-right: 15px;
           font-size: 2.5rem;
         }
 
-        p{
+        .p{
           font-size: 1.2rem;
           line-height: 1.5rem;
           width: 50%;
@@ -843,6 +841,7 @@ padding-right: 15px;
     }
 
       article{
+
         p{
           font-size: 1.5rem;
         }
@@ -865,7 +864,7 @@ padding-right: 15px;
         font-size: 3rem;
       }
 
-      p{
+      .p{
         font-size: 1.5rem;
         line-height: 1.5rem;
         width: 50%;
