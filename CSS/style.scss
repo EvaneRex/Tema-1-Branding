@@ -290,6 +290,65 @@ video {
 
 
 /*...Styling for Service page....*/
+.services-body{
+  background-color: partial.$font-color2;
+
+}
+
+.services-boxes{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 10px;
+
+  #konsultation-box, #junior-box, #premium-box, #pro-service-box{
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 3fr;
+    //background-color: partial.$font-color2;
+    border: 1px solid partial.$header-footer-color;
+    border-radius: 10px;
+    margin:0 auto;
+    height: 639px;
+
+    p:first-of-type{
+      font-size: 20pt;
+      justify-self: center;
+      font-family: partial.$fontHeadings;
+      padding-top: 10px;
+    }
+    P{
+      font-size: 18px;
+      font-family: partial.$fontBroedText;
+      margin: 10px;
+      line-height: 1.5;
+    }
+    a{
+      @include partial.a-hover;
+      @include partial.btn($width: 10rem, $height: 3rem);
+      margin: 10px auto 20px auto;
+      grid-row: 5;
+    }
+
+    #konsultation-box {
+      height: 500px;
+      background-color: partial.$font-color2;
+    }
+
+
+  }
+  #junior-box {
+    background-color: partial.$kort2;
+
+    p:nth-child(3n+3){
+text-align: center;
+    }
+    p:last-of-type{
+      justify-self: center;
+    }
+  }
+  }
 
 
 
