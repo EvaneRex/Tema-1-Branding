@@ -529,7 +529,7 @@ padding-right: 15px;
     text-align: center;
     margin:  0.5rem auto;
     padding: 0.2rem 0.2rem;
-    width: 60%;
+    width: 70%;
     color: partial.$font-color1;
   }
 
@@ -541,6 +541,7 @@ padding-right: 15px;
   p {
     font-size: 1rem;
     font-family: partial.$fontBroedText;
+    line-height: 1.5rem;
   }
 
 }
@@ -621,26 +622,27 @@ padding-right: 15px;
 
 .testimonials{
 margin: 1rem auto;
-height: 25rem;
+height: 35rem;
 width: 20rem;
 overflow:scroll;
 
   div{
-    height: 20rem;
+    height: auto;
     width: 17.2rem;
     border: 5px solid partial.$papercut2;
     border-radius: 10px;
-    padding: 0.5rem;
-    margin: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    margin: 1.5rem 0.5rem;
     background-color: partial.$bg;
     filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
     
     p{
-      width: 60%;
+      width: 80%;
       font-family: partial.$fontBroedText;
       color: partial.$font-color1;
       font-size: 1rem;
       text-align: left;
+      line-height: 1.5rem;
     }
     p:nth-of-type(2){
       font-weight: bold;
@@ -660,6 +662,7 @@ overflow:scroll;
 
       p{
         font-size: 1.2rem;
+        line-height: 1.5rem;
       }
 
     /*------billedenavigationen-----*/
@@ -751,6 +754,7 @@ overflow:scroll;
 
       p{
         font-size: 1.5rem;
+        line-height: 1.5rem;
       }
 
     /*------billedenavigationen-----*/
