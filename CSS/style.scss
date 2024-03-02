@@ -639,6 +639,12 @@ margin: 1rem auto;
 height: 35rem;
 width: 20rem;
 
+  h2{
+    font-family: partial.$fontHeadings;
+    font-size: 2rem;
+    text-align: center;
+  }
+
 
     div{
       height: auto;
@@ -646,7 +652,7 @@ width: 20rem;
       border: 5px solid partial.$papercut2;
       border-radius: 10px;
       padding: 0.5rem 0.5rem;
-      margin: auto;
+      margin: 1.5rem;
       background-color: partial.$bg;
       filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
       
@@ -673,6 +679,9 @@ width: 20rem;
 
       h1{
         font-size: 3.8rem;
+      }
+      h2{
+        font-size: 2.5rem;
       }
 
       p{
@@ -765,6 +774,9 @@ width: 20rem;
 
       h1{
         font-size: 4rem;
+      }
+      h2{
+        font-size: 3rem;
       }
 
       p{
