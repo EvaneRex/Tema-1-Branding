@@ -44,10 +44,6 @@ header {
     margin-top: 25px;
   }
 
-  .navToggle{
-     display: flex !important;
-     flex-direction: column;
-   }
   .bars {
     display:none;
     cursor: pointer;
@@ -299,6 +295,40 @@ video {
   .desktop-nav {
     display: none;
   }
+/* styling for burgermenu when toggled*/
+  .toggleShow {
+    display: flex;
+    padding: 10px;
+    background-color: partial.$font-color3;
+
+
+
+    input {
+      border-radius: 50px;
+      height: 25px;
+      width: 150px;
+      padding: 15px;
+      background-color: transparent;
+      color: partial.$font-color2;
+      font-size: 22px;
+      font-family: partial.$fontHeadings;
+      border: 2px solid partial.$font-color2;
+      margin: 10px;
+
+    }
+    ul{
+      list-style: none;
+    }
+
+    a{
+      color: partial.$font-color2;
+      font-family: partial.$fontHeadings;
+      font-size: 20pt;
+      padding: 10px;
+      line-height: 1.5;
+    }
+
+  }
 
 }
 .mobile-nav {
@@ -350,6 +380,7 @@ video {
     }
 
   }
+
 
 
   header {
