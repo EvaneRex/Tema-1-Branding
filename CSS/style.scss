@@ -581,8 +581,7 @@ padding-right: 15px;
   justify-content: center;
   align-content: center;
 
-  h1, p {
-    text-align: center;
+  h1, h2, p {
     margin:  0.5rem auto;
     padding: 0.2rem 0.2rem;
     width: 70%;
@@ -592,12 +591,19 @@ padding-right: 15px;
   h1 {
     font-size: 2.75rem;
     font-family: partial.$fontHeadings;
+    text-align: center;
+  }
+  h2{
+    font-family: partial.$fontHeadings;
+    font-size: 2rem;
+    text-align: center;
   }
 
   p {
     font-size: 1rem;
     font-family: partial.$fontBroedText;
     line-height: 1.5rem;
+    text-align: left;
   }
 
 }
@@ -676,11 +682,11 @@ padding-right: 15px;
 
 /*-------------------------------Testimonials-------------------------------*/
 
-.testimonials{
-margin: 1rem auto;
-height: 35rem;
-width: 20rem;
-
+.testimonial-con{
+  margin: 1rem auto;
+  height: 30rem;
+  width: 22rem;
+  
 
     div{
       height: auto;
@@ -688,7 +694,7 @@ width: 20rem;
       border: 5px solid partial.$papercut2;
       border-radius: 10px;
       padding: 0.5rem 0.5rem;
-      margin: auto;
+      margin: 1.5rem auto;
       background-color: partial.$bg;
       filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
       
@@ -706,6 +712,8 @@ width: 20rem;
     }
   }  
 
+  /*-------------------------------TEST-------------------------------*/
+ 
 
 /*------------------------------------------Showcase media-----------------------------------*/
 @media screen and (min-width: 700px) and (max-width:1500px){
@@ -716,18 +724,22 @@ width: 20rem;
       h1{
         font-size: 3.8rem;
       }
+      h2{
+        font-size: 2.5rem;
+      }
 
       p{
         font-size: 1.2rem;
         line-height: 1.5rem;
+        width: 50%;
       }
 
     /*------billedenavigationen-----*/
     .sc_nav {
-      margin: 0.5rem auto;
+      margin: 0.5rem 0.5rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(1fr 1fr 1fr 1fr 0.5fr);
       gap: 0.5rem;
       
       .container_1, .container_2, .container_4, .container_5, .container_6 {
@@ -808,18 +820,22 @@ width: 20rem;
       h1{
         font-size: 4rem;
       }
+      h2{
+        font-size: 3rem;
+      }
 
       p{
         font-size: 1.5rem;
         line-height: 1.5rem;
+        width: 50%;
       }
 
     /*------billedenavigationen-----*/
     .sc_nav {
-      margin: 0.5rem auto;
+      margin: 4rem 0.5rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(1fr 1fr 1fr 1fr 0.5fr);
       gap: 1.5rem;
       
       .container_1, .container_2, .container_4, .container_5, .container_6 {
