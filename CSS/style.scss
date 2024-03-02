@@ -446,13 +446,57 @@ video {
   }
 
 .desktop-nav-footer{
-  //display: block;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 300px;
+  height: auto;
   background-color: partial.$header-footer-color;
   bottom: 0;
   color: partial.$font-color2;
+
+  p, a{
+    font-family: partial.$fontHeadings;
+    font-size: 20pt;
+    color: partial.$font-color2;
+  }
+
+  #first-section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 15px;
+
+    p{
+      padding-left: 15px;
+
+    }
+
+    img{
+    padding: 10px 0 5px 15px;
+    }
+  }
+
+#second-section{
+  display: grid;
+  grid-template-rows:repeat(4, 1fr);
+  margin: 10px;
+  justify-self: center;
+
+
+
+  img{
+padding-right: 15px;
+  }
+}
+
+  #third-section{
+    justify-self: right;
+    margin: 15px;
+
+    p{
+      padding: 10px;
+      line-height: 1.5;
+    }
+  }
+
 }
 
 
