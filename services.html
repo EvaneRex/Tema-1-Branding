@@ -10,7 +10,7 @@
 
 <body class="services-body">
 
-<header class="grid">
+<header>
     <nav class="mobile-nav">
         <img class="navToggle bars icons" src="img/burgerMenu.png" alt=" trykbar burgermenu ikon">
         <a href="index.html"><img src="img/MDS-logo.png" alt="MDS logo"></a>
@@ -18,11 +18,11 @@
     </nav>
     <nav class="desktop-nav">
         <ul>
-            <li><img src="img/MDS-logo.png" alt="MDS logo"></li>
+            <li><a href="index.html"><img src="img/MDS-logo.png" alt="MDS logo"></a></li>
             <li class="nav"><a href="showcase.html">Showcases</a></li>
             <li class="nav"><a href="booking.html">Booking</a></li>
             <li class="nav"><a href="moedeos.html">Mød teamet</a></li>
-            <li class="nav"><a href="services.html">Services</a></li>
+            <li class="nav"><a href="index.html">Forside</a></li>
             <li>
                 <form>
                     <label class="visually-hidden" for="search"></label>
@@ -34,7 +34,7 @@
     </nav>
 </header>
 
-<main>
+<main class="grid">
     <p id="services-heading">Services</p>
     <section class="services-boxes">
         <aside id="konsultation-box">
@@ -69,16 +69,13 @@
             <p> + Gratis konsultation</p>
             <a href="booking.html"> Book </a>
         </aside>
-
-
     </section>
-
     <section class="process-guide-section">
-    <img id="mds-proces-guide" src="img/mdsProcessGuide.png" alt="proces guide">
+        <img id="mds-proces-guide" src="img/mdsProcessGuide.png" alt="proces guide">
     </section>
 
 </main>
-<footer >
+<footer>
     <nav class="mobile-nav-footer">
         <aside>
             <p> Sociale Medier</p>
@@ -128,7 +125,8 @@
             <p> Kontakt os</p>
             <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
                                                                                         alt="mobil ikon">+4521436587</a>
-            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"> multidesign@studio.com</a>
+            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon">
+                multidesign@studio.com</a>
             <p>CVR-nr. 4386602</p>
         </section>
         <section id="third-section">
@@ -147,6 +145,7 @@
             console.log(message)
         }
     }
+
     const navbarToggle = () => {
         log('toggling now');
         const nav = document.querySelector('.desktop-nav');
