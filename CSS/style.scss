@@ -591,9 +591,6 @@ overflow:scroll;
     background-color: partial.$bg;
     filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
     
-    
-    
-
     p{
       width: 60%;
       font-family: partial.$fontBroedText;
@@ -608,7 +605,7 @@ overflow:scroll;
 }
 
 /*------------------------------------------Showcase media-----------------------------------*/
-@media only screen and (min-width: 701px) and (max-width:1500px){
+@media only screen and (min-width: 700px) and (max-width:1500px){
   .sc_BG {
     justify-content: center;
     align-content: center;
@@ -698,9 +695,7 @@ overflow:scroll;
   }
 }
 
-
-
-/*-------Fra 1201px-------*/
+/*------------------Fra 1501px---------------------------*/
 @media screen and (min-width: 1501px) {
   .sc_BG {
     justify-content: center;
