@@ -683,7 +683,7 @@ padding-right: 15px;
       border: 5px solid partial.$papercut2;
       border-radius: 10px;
       padding: 0.5rem 0.5rem;
-      margin: auto;
+      margin: 1.5rem auto;
       background-color: partial.$bg;
       filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
       
@@ -703,6 +703,7 @@ padding-right: 15px;
 
   /*-------------------------------TEST-------------------------------*/
  
+
 /*------------------------------------------Showcase media-----------------------------------*/
 @media screen and (min-width: 700px) and (max-width:1500px){
   .sc_BG {
@@ -724,10 +725,10 @@ padding-right: 15px;
 
     /*------billedenavigationen-----*/
     .sc_nav {
-      margin: 0.5rem auto;
+      margin: 0.5rem 0.5rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(1fr 1fr 1fr 1fr 0.5fr);
       gap: 0.5rem;
       
       .container_1, .container_2, .container_4, .container_5, .container_6 {
@@ -820,10 +821,10 @@ padding-right: 15px;
 
     /*------billedenavigationen-----*/
     .sc_nav {
-      margin: 0.5rem auto;
+      margin: 4rem 0.5rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(1fr 1fr 1fr 1fr 0.5fr);
       gap: 1.5rem;
       
       .container_1, .container_2, .container_4, .container_5, .container_6 {
