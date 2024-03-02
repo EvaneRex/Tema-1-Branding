@@ -867,7 +867,7 @@ padding-right: 15px;
 
       .p{
         font-size: 1.5rem;
-        line-height: 1.5rem;
+        line-height: 2rem;
         width: 50%;
       }
 
@@ -941,11 +941,13 @@ padding-right: 15px;
         .container_6 {
           grid-column: 2/4;
           grid-row: 4;
+          height: 20rem;
+          width: 57rem;
 
           .sc_text {
             @include partial.sc_text_m;
             height: 20rem;
-            width: 56.2rem;
+            width: 57rem;
 
             a{
               @include partial.sc_a_m;
@@ -960,12 +962,12 @@ padding-right: 15px;
           @include partial.sc_con_m;
           background-position: center;
           height: 7.1rem;
-          width: 56.2rem;
+          width: 57rem;
 
           .sc_text {
             @include partial.sc_text_m;
             height: 7.1rem;
-            width: 56.2rem;
+            width: 57rem;
             padding-top: 1.5rem;
 
             a{
@@ -981,9 +983,8 @@ padding-right: 15px;
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
-    
-        
+        gap: 1.5rem;       
+      
         .ts_1{
           grid-column: 2;
           grid-row: 1;
@@ -1002,8 +1003,13 @@ padding-right: 15px;
         }
     
           article{
+            height: 27rem;
+            width: 26.8rem;
+            margin: 0.7rem 0.5rem;
             p{
               font-size: 1.5rem;
+              padding-top: 0.5rem;
+              line-height: 2rem;
             }
           }
         }
