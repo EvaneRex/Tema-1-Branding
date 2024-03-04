@@ -1292,7 +1292,19 @@ input,select{
   margin-left: 15%;
 }
 
- .kort-indhold{
+ .kort-indholdrikke{
+  @include partial.place_itemmoedos;
+ }
+
+ .kort-indholdvictoria{
+  @include partial.place_itemmoedos;
+ }
+
+ .kort-indholdnanna{
+  @include partial.place_itemmoedos;
+ }
+
+ .kort-indholdmathilde{
   @include partial.place_itemmoedos;
  }
  .team-kort{
