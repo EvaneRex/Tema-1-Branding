@@ -131,12 +131,13 @@ $fontHeadings: "AlegreyaSans-Regular";
     background-color: #63A8F1;
 
      @media only screen and (min-width: 700px) {
-        width: 280px;
-        height: 243px;
-        padding-inline-end: 50px;
-    }
-
+     width: 250px;
+     height: 245px;
+     }
+        
 }
+
+    
     
 @mixin place_itemmoedos{
     width: 100%;
@@ -157,7 +158,8 @@ $fontHeadings: "AlegreyaSans-Regular";
   align-items: center;
   margin-left: 15%;
   margin-top: -35%;
-  }
+
+}
 
 
 @mixin img_box{
@@ -171,7 +173,6 @@ $fontHeadings: "AlegreyaSans-Regular";
      @media only screen and (min-width: 700px){
         width: 143px;
         height: 155px;
-
     }
     
 }
