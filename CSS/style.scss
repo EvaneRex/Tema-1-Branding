@@ -304,7 +304,7 @@ video {
 
 .services-boxes {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 30px;
   margin: 0 auto;
   padding: 10px;
@@ -461,13 +461,15 @@ video {
     max-height:52px;
     min-height: 52px;
     border-radius:10px;
+    font-family: partial.$fontBroedText;
+    padding: 5px;
+    font-size: 12pt;
 
   }
   #book-button{
     @include partial.btn($width:130px, $height:40px);
     @include partial.a-hover;
     box-shadow: 0 4px 8px #2c3e50;
-    margin-top: 10px;
   }
 
 }
@@ -489,16 +491,19 @@ padding: 10px;
     font-size: 16pt;
     color: partial.$font-color1;
   }
+
+  img:nth-of-type(2){
+    height: auto;
+  }
     img{
       margin-right: 20px;
-
-
-
+      height: 40px;
   }
 }
 
 #papercut-booking {
   float: right;
+  height: 500px;
 }
 
 
@@ -775,13 +780,13 @@ padding: 10px;
   .services-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-self: right;
+    grid-template-rows: 1fr 1fr;
     margin: 0 auto;
+    gap: 100px;
 
     #konsultation-box, #junior-box, #premium-box, #pro-service-box {
       width: 530px;
       height: 700px;
-      margin: 0 auto;
 
       p:first-of-type {
         font-size: 40px;
@@ -795,6 +800,7 @@ padding: 10px;
 
 
   #mds-proces-guide {
+    padding: 200px 0 200px 0;
     height: 1800px;
   }
   /*.....styling for booking page desktop....*/
