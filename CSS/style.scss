@@ -446,10 +446,10 @@ video {
   }
 
 input,select{
-  padding: 5px;
+  padding: 4px;
   border-radius: 10px;
   width: 224px;
-  height: 28px;
+  height: 30px;
   border: 1px solid partial.$font-color1;
   background-color: partial.$bg;
   font-family: partial.$fontHeadings;
@@ -471,10 +471,35 @@ input,select{
   }
 
 }
+.contact-booking{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+
+
+  aside{
+padding: 10px;
+  }
+
+  a{
+    text-decoration: none;
+    padding: 10px;
+    font-family: partial.$fontBroedText;
+    font-size: 16pt;
+    color: partial.$font-color1;
+  }
+    img{
+      margin-right: 20px;
 
 
 
+  }
+}
 
+#papercut-booking {
+  float: right;
+}
 
 
 /*...styling for booking page ending......*/
