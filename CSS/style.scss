@@ -1263,9 +1263,7 @@ input,select{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;;
-
+  margin-top: 30px;
 }
 
 .teamkorttekst h3{
@@ -1307,6 +1305,7 @@ input,select{
  .kort-indholdmathilde{
   @include partial.place_itemmoedos;
  }
+
  .team-kort{
 @include partial.team_kort;
  }
@@ -1319,5 +1318,7 @@ input,select{
 @include partial.img_box;
  }
 
+/*........MEDIA til Moedos-page........*/
+@media screen and (min-width: 700px) and (max-width: 1500px) 
 
 
