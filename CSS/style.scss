@@ -1288,9 +1288,7 @@ padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;;
-
+  margin-top: 30px;
 }
 
 .teamkorttekst h3{
@@ -1317,9 +1315,22 @@ padding: 10px;
   margin-left: 15%;
 }
 
- .kort-indhold{
+ .kort-indholdrikke{
   @include partial.place_itemmoedos;
  }
+
+ .kort-indholdvictoria{
+  @include partial.place_itemmoedos;
+ }
+
+ .kort-indholdnanna{
+  @include partial.place_itemmoedos;
+ }
+
+ .kort-indholdmathilde{
+  @include partial.place_itemmoedos;
+ }
+
  .team-kort{
 @include partial.team_kort;
  }
@@ -1332,5 +1343,7 @@ padding: 10px;
 @include partial.img_box;
  }
 
+/*........MEDIA til Moedos-page........*/
+@media screen and (min-width: 700px) and (max-width: 1500px) 
 
 
