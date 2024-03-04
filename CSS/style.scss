@@ -1345,22 +1345,34 @@ padding: 10px;
 
 /*........MEDIA til Moedos-page........*/
 @media screen and (min-width: 700px){
+
+  main{
+    
+  }
+ 
   .overskriftmoedos-side h1{
     font-size: 3.8rem;
   }
-
-  .teamkortsektionerne{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
  
   .kort-indholdrikke{
-    display: grid;
-    grid-row: 1;
-    grid-column: 1;
+    float: left;
+    width: 50%;
   }
 
+  .kort-indholdvictoria{
+    float: right;
+    width: 50%;
+  }
+
+  .kort-indholdnanna{
+    float: left;
+    width: 50%;
+  }
+  
+  .kort-indholdmathilde{
+    float: right;
+    width: 50%;
+  }
 }
 
 
