@@ -1305,7 +1305,6 @@ padding: 10px;
   font-family: partial.$fontHeadings;
   font-weight: 700;
   font-size: 20px;
-  text-shadow: 0 8px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   margin-left: 15%;
 }
@@ -1355,44 +1354,45 @@ padding: 10px;
   .mo{
     width: 100%;
     height: 1000px;
+    
   }
 
  
   .overskriftmoedos-side h1{
     font-size: 3.8rem;
+    margin: 10%;
   }
  
   .kort-indholdrikke{
     float: left;
     width: 50%;
     padding-left: 7%;
-    scale: 130%;
+    scale: 125%;
   }
 
   .kort-indholdvictoria{
     float: right;
     width: 50%;
     padding-right: 7%;
-    scale: 130%;
+    scale: 125%;
   }
 
   .kort-indholdnanna{
     float: left;
     width: 50%;
     padding-left: 7%;
-    scale: 130%;
+    scale: 125%;
   }
   
   .kort-indholdmathilde{
     float: right;
     width: 50%;
     padding-right: 7%;
-    scale: 130%;
+    scale: 125%;
   }
 
   .kort-indholdrikke .kort-indholdvictoria .kort-indholdnanna .kort-indholdmathilde{
-    @include partial.team_kortMedia;
-    @include partial.img_boxMedia;
+    
 
   }
 }
