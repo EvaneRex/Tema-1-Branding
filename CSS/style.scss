@@ -1181,8 +1181,22 @@ video {
 
 
 /*........Styling for Moedos-page........*/
-/* Moedos-siden starter*/
-.rikke-indhold{
+/* Moedos-siden starter*/ 
+
+
+
+.overskriftmoedos-side h1{
+  font-size: 2.75rem;
+  font-family: partial.$fontHeadings;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  color: partial.$font-color1;
+}
+
+
+ .rikke-indhold{
   @include partial.place_itemmoedos;
  }
     .team-kort{
@@ -1197,3 +1211,11 @@ video {
   @include partial.img_box;
   }
 
+
+h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+}
