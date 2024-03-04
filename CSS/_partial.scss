@@ -122,8 +122,8 @@ $fontHeadings: "AlegreyaSans-Regular";
 /*Moesossiden*/
 @mixin team_kort{
     position: relative;
-    width: 196px;
-    height: 182px;
+    width: 210px;
+    height: 230px;
     background-color: #FFFAFA;    
     padding-inline-end: 30px;
     border-radius: 20px;
@@ -132,7 +132,7 @@ $fontHeadings: "AlegreyaSans-Regular";
 
      @media only screen and (min-width: 700px) {
      width: 250px;
-     height: 245px;
+     height: 235px;
      }
         
 }
