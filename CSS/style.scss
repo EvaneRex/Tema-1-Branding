@@ -1195,23 +1195,6 @@ video {
   color: partial.$font-color1;
 }
 
-
- .rikke-indhold{
-  @include partial.place_itemmoedos;
- }
-    .team-kort{
-   @include partial.team_kort;
-    }
-
-  .teamkortbillede{
-    @include partial.img_placing;
-  }
- 
-  .teamkortbillede img{
-  @include partial.img_box;
-  }
-
-
 .teamkorttekst h3{
   display: flex;
   justify-content: center;
@@ -1235,3 +1218,26 @@ video {
   text-align: center;
   margin-left: 15%;
 }
+
+
+ .rikke-indhold{
+  @include partial.place_itemmoedos;
+ }
+ .team-kort{
+@include partial.team_kort;
+ }
+
+.teamkortbillede{
+@include partial.img_placing;
+}
+ 
+.teamkortbillede img{
+@include partial.img_box;
+ }
+
+
+.victoria-indhold{
+  @include partial.place_itemmoedos;
+}
+
+
