@@ -1252,3 +1252,60 @@ input,select{
 
 
 /*........Styling for Moedos-page........*/
+/* Moedos-siden starter*/ 
+
+
+
+.overskriftmoedos-side h1{
+  font-size: 2.75rem;
+  font-family: partial.$fontHeadings;
+  color: partial.$font-color1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;;
+
+}
+
+.teamkorttekst h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-family: partial.$fontHeadings;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-left: 15%;
+}
+
+.teamkorttekst p{
+  font-family: partial.$fontBroedText;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 15%;
+}
+
+ .kort-indhold{
+  @include partial.place_itemmoedos;
+ }
+ .team-kort{
+@include partial.team_kort;
+ }
+
+.teamkortbillede{
+@include partial.img_placing;
+}
+ 
+.teamkortbillede img{
+@include partial.img_box;
+ }
+
+
+

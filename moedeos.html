@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="da">
 <head>
@@ -12,7 +11,6 @@
 <!--Navigation indsættes her-->
 
 <body>
-
     <header class="grid">
         <nav class="mobile-nav">
             <img class="navToggle bars icons" src="img/burgerMenu.png" alt=" trykbar burgermenu ikon">
@@ -38,19 +36,134 @@
     </header>
     
     <main>
-    <section class="rikke-indhold">
-            <div class="team-kort">
-            <div class="teamkortbillede">
-                <img src="" alt="">
+
+     <div class="overskriftmoedos-side">
+         <h1>Mød teamet</h1>
+
+    <section class="kort-indhold">
+         <div class="team-kort">
+         <div class="teamkortbillede">
+            <img src="/img/Rikketeam.pdf" alt="">
          </div>
+        <div class="teamkorttekst">
          <h3>Rikke Rasmussen</h3>
-         <p>Web developer</p>
+         <p>Web developer & Content creater</p>
     </section>
 
+    <section class="kort-indhold">
+        <div class="team-kort">
+         <div class="teamkortbillede">
+             <img src="/img/Victoriateam.pdf" alt="">
+          </div>
+        <div class="teamkorttekst">
+          <h3>Victoria Philippa</h3>
+          <p>Animation & Frontend-udvikling</p>
+    </section>
+
+    <section class="kort-indhold">
+        <div class="team-kort">
+         <div class="teamkortbillede">
+             <img src="/img/Nannateam.pdf" alt="">
+          </div>
+        <div class="teamkorttekst">
+          <h3>Nanna Feltendahl</h3>
+          <p>Grafisk design & Videoproduktion</p>
+    </section>
+
+    <section class="kort-indhold">
+        <div class="team-kort">
+         <div class="teamkortbillede">
+             <img src="/img/Mathildeteam..pdf" alt="">
+          </div>
+        <div class="teamkorttekst">
+          <h3>Mathilde Jensen</h3>
+          <p>Visuelt identitet og Frontend-udvikling</p>
+    </section>
+
+<footer class="grid">
+    <nav class="mobile-nav-footer">
+        <aside>
+            <p> Sociale Medier</p>
     
+            <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
+                    <img src="img/instagram.png" alt="instagram ikon">
+             </a>
+                <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
+                    <img src="img/linked.png" alt="linkedin ikon">
+                </a>
+                <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
+                    <img src="img/facebook.png" alt="facebook ikon">
+                </a>
+            </aside>
+    
+            <aside>
+                <p> Kontakt os</p>
+                <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
+                                                                                            alt="mobil ikon"></a>
+                <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"></a>
+    
+            </aside>
+    
+        </nav>
+    
+        <nav class="desktop-nav-footer">
+            <section id="first-section">
+                <aside>
+                    <p>MultiDesignStudio</p>
+                    <img src="img/maskot-icon.png" alt="paefugl">
+                </aside>
+                <aside>
+                    <p> Sociale medier</p>
+    
+                    <a href="https://www.instagram.dk" target="_blank" rel="nofollow">
+                        <img src="img/instagram.png" alt="instagram ikon">
+                    </a>
+                    <a href="https://www.linkedin.dk://" target="_blank" rel="nofollow">
+                        <img src="img/linked.png" alt="linkedin ikon">
+                    </a>
+                    <a href="https://www.facebook.dk://" target="_blank" rel="nofollow">
+                        <img src="img/facebook.png" alt="facebook ikon">
+                    </a>
+                </aside>
+            </section>
+            <section id="second-section">
+                <p> Kontakt os</p>
+                <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
+                                                                                            alt="mobil ikon">+4521436587</a>
+                <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon">
+                    multidesign@studio.com</a>
+                <p>CVR-nr. 4386602</p>
+            </section>
+            <section id="third-section">
+                <p>Åbningstider</p>
+                <p>Man-Tor: 08:00-16:00</p>
+                <p>Fredag: 08:00-15:30</p>
+                <p>Lørdag-søn: Lukket</p>
+            </section>
+        </nav>
+    
+    </footer>
+    <script>
+        function log(message) {
+            if (console && console.log) {
+                console.log(message)
+            }
+        }
+    
+        const navbarToggle = () => {
+            log('toggling now');
+            const nav = document.querySelector('.desktop-nav');
+            nav.classList.toggle('toggleShow');
+        }
+        document.querySelector('.navToggle').addEventListener('click', navbarToggle);
+    </script>
+
+
+
 
 </body>
 </html>
+
 
 
 

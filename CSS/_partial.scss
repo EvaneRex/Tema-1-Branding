@@ -117,32 +117,6 @@ $fontHeadings: "AlegreyaSans-Regular";
     padding: $padding;
 }
 
-/*Til Moedos-siden*/
-/*Moesossiden*/
-@mixin team_kort{
-    position: relative;
-    width: 196px;
-    height: 182px;
-    background-color: #FFFAFA;    
-    padding-inline-end: 30px;
-    border-radius: 20px;
-    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
-    background-color: #63A8F1;
-}
-    
-@mixin place_itemmoedos{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin img_size{
-    position: relative;
-    width: 123px;
-    height: 135px;
-}
 
 /*Til Moedos-siden*/
 /*Moesossiden*/
@@ -159,14 +133,26 @@ $fontHeadings: "AlegreyaSans-Regular";
     
 @mixin place_itemmoedos{
     width: 100%;
-    height: 100vh;
+    height: 58vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-@mixin img_size{
-    position: relative;
+@mixin img_placing{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  margin-top: -35%;
+  }
+
+
+@mixin img_box{
     width: 123px;
     height: 135px;
+    border-radius: 20px;
+    border: 5px solid #3B3E9F;
+    background: #D9D9D9;
+    box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
