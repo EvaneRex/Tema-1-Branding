@@ -8,9 +8,9 @@
     <title>Booking</title>
 </head>
 
-<body class="body-forside grid">
+<body class="body-forside">
 
-<header class="grid">
+<header>
     <nav class="mobile-nav">
         <img class="navToggle bars icons" src="img/burgerMenu.png" alt=" trykbar burgermenu ikon">
         <a href="index.html"><img src="img/MDS-logo.png" alt="MDS logo"></a>
@@ -36,40 +36,46 @@
 
 <main>
     <section class="kontaktformular">
-
+        <h1> Booking </h1>
         <form class="kontaktform">
-            <h1> Booking </h1>
-            <div class="form-rubrikker">
-                <label class="visually-hidden" for="navn">Navn</label>
-                <input placeholder="Navn" id="navn" type="text" required>
 
-                <label class="visually-hidden" for="mail">E-mail</label>
-                <input placeholder="E-mail" id="mail" type="email">
+            <div>
+                <p>Navn</p>
+                <label class="visually-hidden" for="navn"></label>
+                <input placeholder="" id="navn" type="text" required>
+            </div>
+            <div>
+                <p>Email</p>
+                <label class="visually-hidden" for="mail"></label>
+                <input placeholder="" id="mail" type="email">
             </div>
 
-            <div class="form-rubrikker">
-                <label class="visually-hidden" for="telefon">Telefonnummer</label>
-                <input placeholder="Telefon" id="telefon" type="tel">
-
-                <label for="date">Ønsket dato for møde</label>
-                <input placeholder="date" id="date" type="date">
-
-                <label class="visually-hidden" for="region">Vælg Service</label>
+            <div>
+                <p>Dato</p>
+                <label for="date"></label>
+                <input placeholder="vælg dato" id="date" type="date">
+            </div>
+            <div>
+                <p>Vælg service</p>
+                <label class="visually-hidden" for="region"></label>
                 <select id="region" name="select">
                     <option value="0" selected disabled>Vælg Service</option>
                     <option value="1">Konsultation</option>
                     <option value="2">Junior Service</option>
                     <option value="3">Premium Service</option>
-                    <option value="4">Professionel <Script></Script>Service</option>
+                    <option value="4">Professionel
+                        <Script></Script>
+                        Service
+                    </option>
                 </select>
             </div>
-
-            <div class="form-rubrikker">
-                <label class="visually-hidden" for="besked">Besked</label>
-                <textarea placeholder="Besked" id="besked" rows="8"></textarea>
+            <div>
+                <p>Skriv en besked</p>
+                <label class="visually-hidden" for="besked"></label>
+                <textarea placeholder="" id="besked"></textarea>
             </div>
-            <div class="form-rubrikker">
-                <input type="submit" name="submit" value="Send besked">
+            <div>
+                <input id="book-button" type="submit" name="submit" value="Book">
             </div>
         </form>
 
@@ -78,13 +84,14 @@
     <section>
         <a href="tel:+45 21436587">+45 21436587</a>
         <a href="mailto: multidesign@studio.dk">multidesign@studio.dk</a>
-        <a href="https://www.google.com/maps/place/Gjerrild+Klint/@56.5230787,10.7692594,12.08z/data=!4m6!3m5!1s0x464e7fbdf004f0cf:0x4aa45d29fd410d8e!8m2!3d56.5201264!4d10.8538352!16s%2Fg%2F11h0__q6sm?entry=ttu">MultiDesign Studio, Århus</a>
+        <a href="https://www.google.com/maps/place/Gjerrild+Klint/@56.5230787,10.7692594,12.08z/data=!4m6!3m5!1s0x464e7fbdf004f0cf:0x4aa45d29fd410d8e!8m2!3d56.5201264!4d10.8538352!16s%2Fg%2F11h0__q6sm?entry=ttu">MultiDesign
+            Studio, Århus</a>
     </section>
+
 </main>
 
 
-
-<footer class="grid">
+<footer>
     <nav class="mobile-nav-footer">
         <aside>
             <p> Sociale Medier</p>
@@ -134,7 +141,8 @@
             <p> Kontakt os</p>
             <a href="mailto:multidesign@studio.com" target="_blank" rel="nofollow"><img src="img/phone.png"
                                                                                         alt="mobil ikon">+4521436587</a>
-            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon"> multidesign@studio.com</a>
+            <a href="tel:+4521436587" target="_blank" rel="nofollow"><img src="img/mail.png" alt="mail ikon">
+                multidesign@studio.com</a>
             <p>CVR-nr. 4386602</p>
         </section>
         <section id="third-section">
@@ -152,6 +160,7 @@
             console.log(message)
         }
     }
+
     const navbarToggle = () => {
         log('toggling now');
         const nav = document.querySelector('.desktop-nav');
