@@ -1344,7 +1344,22 @@ padding: 10px;
  }
 
 /*........MEDIA til Moedos-page........*/
-@media screen and (min-width: 700px) and (max-width: 1500px){
+@media screen and (min-width: 700px){
+  .overskriftmoedos-side h1{
+    font-size: 3.8rem;
+  }
+
+  .teamkortsektionerne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+ 
+  .kort-indholdrikke{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+  }
 
 }
 
