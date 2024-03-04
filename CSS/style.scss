@@ -1287,7 +1287,7 @@ padding: 10px;
 
 
 
-.overskriftmoedos-side h1{
+.overskriftmoedos-side .h1{
   font-size: 2.75rem;
   font-family: partial.$fontHeadings;
   color: partial.$font-color1;
@@ -1295,6 +1295,17 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+}
+
+.overskriftmoedos-side .p{
+  width: 60%;
+  font-family: partial.$fontBroedText;
+  color: partial.$font-color1;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 10%;
+  
+  
 }
 
 .teamkorttekst h3{
@@ -1397,5 +1408,4 @@ padding: 10px;
   }
 }
 
-  
 
