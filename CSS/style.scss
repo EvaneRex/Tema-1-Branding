@@ -783,9 +783,12 @@ padding: 10px;
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
     gap: 100px;
+    width: 90%;
+    max-width: 1300px;
+    overflow: hidden;
 
     #konsultation-box, #junior-box, #premium-box, #pro-service-box {
-      width: 530px;
+      //width: 100%;
       height: 700px;
 
       p:first-of-type {
