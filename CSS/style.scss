@@ -1188,11 +1188,13 @@ video {
 .overskriftmoedos-side h1{
   font-size: 2.75rem;
   font-family: partial.$fontHeadings;
+  color: partial.$font-color1;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
-  color: partial.$font-color1;
+  margin-bottom: 10%;;
+
 }
 
 .teamkorttekst h3{
@@ -1219,8 +1221,7 @@ video {
   margin-left: 15%;
 }
 
-
- .rikke-indhold{
+ .kort-indhold{
   @include partial.place_itemmoedos;
  }
  .team-kort{
@@ -1235,9 +1236,5 @@ video {
 @include partial.img_box;
  }
 
-
-.victoria-indhold{
-  @include partial.place_itemmoedos;
-}
 
 
