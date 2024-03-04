@@ -1354,7 +1354,12 @@ padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; 
+  text-align: left;
+  margin-left: 15%;
+  width: 75%;
+  margin-bottom: 2.5%;
+  margin-top: 1%;
+  
 }
     
 
@@ -1414,18 +1419,16 @@ padding: 10px;
 
   .mo{
     width: 100%;
-    height: 1000px;
-    
+    height: 1200px;
   }
 
  
   .overskriftmoedos-side h1{
     font-size: 3.8rem;
-    margin: 10%;
   }
  
   .kort-indholdrikke{
-    float: left;
+  float: left;
     width: 50%;
     padding-left: 7%;
     scale: 125%;
