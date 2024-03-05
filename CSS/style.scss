@@ -884,6 +884,8 @@ padding: 10px;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-bottom: 5rem;
+    margin-top: 3.5rem;
 
     h1, h2, .p {
       margin: 0.5rem auto;
@@ -896,6 +898,7 @@ padding: 10px;
       font-family: partial.$fontHeadings;
       text-align: center;
       margin-top: 2rem;
+      width: 70%;
     }
 
     h2 {
@@ -903,6 +906,7 @@ padding: 10px;
       font-size: 2rem;
       text-align: center;
       margin-top: 2rem;
+      width: 70%;
     }
 
     .p {
@@ -1031,6 +1035,7 @@ padding: 10px;
 
       h1 {
         font-size: 3.8rem;
+
       }
 
       h2 {
@@ -1169,6 +1174,7 @@ padding: 10px;
 
       h1 {
         font-size: 4rem;
+        width: 80%;
       }
 
       h2 {
