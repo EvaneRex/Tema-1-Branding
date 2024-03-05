@@ -1,6 +1,6 @@
 /* Variabler*/
-$header-footer-color:#040126;
-$font-color1:#040126;
+$header-footer-color: #040126;
+$font-color1: #040126;
 $font-color2: #fffafa;
 $font-color3: #ff800b;
 $papercut1: #0d056c;
@@ -10,180 +10,182 @@ $kort1: #9d9ccc;
 $kort2: #95c2f4;
 $cta: #ff800b;
 $bg: #fffafa;
-$fontBroedText:"Oxygen-Regular";
+$fontBroedText: "Oxygen-Regular";
 $fontHeadings: "AlegreyaSans-Regular";
 
 @font-face {
-    font-family: "AlegreyaSans-Regular";
-    src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
+  font-family: "AlegreyaSans-Regular";
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Oxygen-Regular";
-    src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
+  font-family: "Oxygen-Regular";
+  src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
 }
 
 /*Mixins for homepage, booking and services */
-@mixin btn($width:12.8rem, $height:3.5rem){
-    background-color: $cta;
-    border-radius:70px;
-    color:$bg;
-    text-decoration: none;
-    text-align: center;
-    padding: 5px;
-    border: 0;
-    font-family: $fontBroedText;
-    font-size: 18pt;
-    width: $width;
-    height: $height;
-    display: block;
+@mixin btn($width:12.8rem, $height:3.5rem) {
+  background-color: $cta;
+  border-radius: 70px;
+  color: $bg;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  border: 0;
+  font-family: $fontBroedText;
+  font-size: 18pt;
+  width: $width;
+  height: $height;
+  display: block;
 
 }
+
 @mixin a-hover {
-    text-decoration: none;
-    cursor: pointer;
-    &:hover{
-        color: $papercut2;
-    }
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $papercut2;
+  }
 }
 
-@mixin p-desktop-style{
-    line-height: 1.5;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: $fontBroedText;
-    font-size: 1.5rem;
-    color: $font-color1;
+@mixin p-desktop-style {
+  line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: $fontBroedText;
+  font-size: 1.5rem;
+  color: $font-color1;
 
 }
-@mixin p-mobile-style{
-    line-height: 1.5;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: $fontBroedText;
-    font-size: 1.2rem;
-    color: $font-color1;
-}
-@mixin headings-desktop{
-    font-family: $fontHeadings;
-    font-size: 4rem;
-    color: $font-color1;
-    display: flex;
-    justify-content: center;
+
+@mixin p-mobile-style {
+  line-height: 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: $fontBroedText;
+  font-size: 1.2rem;
+  color: $font-color1;
 }
 
-@mixin headings-mobile ($font-size: 1.5rem){
-    font-family: $fontHeadings;
-    font-size: 2.5rem;
-    color: $font-color1;
-    display: flex;
-    justify-content: center;
+@mixin headings-desktop {
+  font-family: $fontHeadings;
+  font-size: 4rem;
+  color: $font-color1;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin headings-mobile($font-size: 1.5rem) {
+  font-family: $fontHeadings;
+  font-size: 2.5rem;
+  color: $font-color1;
+  display: flex;
+  justify-content: center;
 }
 
 /*-----------------------------------------Til Showcase--------------------------------------*/
 @mixin border_shadow {
-    border: 5px solid $papercut2;
-    border-radius: 10px;
-    background: rgba(59, 62, 159, 0.70); /*giver et farveoverlay med mindsket opacitet*/
-    backdrop-filter: blur(12.5px);
-    object-fit: cover;
-    filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
+  border: 5px solid $papercut2;
+  border-radius: 10px;
+  background: rgba(59, 62, 159, 0.70); /*giver et farveoverlay med mindsket opacitet*/
+  backdrop-filter: blur(12.5px);
+  object-fit: cover;
+  filter: drop-shadow((-8px 8px 4px rgba(0, 0, 0, 0.25)));
 }
 
-@mixin sc_con1 ($width:17.2rem, $height:12.8rem){
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 2rem 0.5em;
-    width: $width;
-    height: $height;
-}
-@mixin sc_text ($width:17.2rem, $height:12.8rem, $padding-top:5.1rem) {
-    width: $width;
-    height: $height;
-    padding-top: $padding-top;
-    text-align: center;
+@mixin sc_con1($width:17.2rem, $height:12.8rem) {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 2rem 0.5em;
+  width: $width;
+  height: $height;
 }
 
-@mixin sc_a ($padding: 5rem 4.5rem 5rem 4.5rem) {
-    text-decoration: none;
-    color: $font-color3;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: $fontBroedText;
-    padding: $padding;
+@mixin sc_text($width:17.2rem, $height:12.8rem, $padding-top:5.1rem) {
+  width: $width;
+  height: $height;
+  padding-top: $padding-top;
+  text-align: center;
+}
+
+@mixin sc_a($padding: 5rem 4.5rem 5rem 4.5rem) {
+  text-decoration: none;
+  color: $font-color3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $fontBroedText;
+  padding: $padding;
 }
 
 @mixin sc_hover {
-    background-color: $papercut2;
-    color: $bg;
-    transition: 0.3s ease-in-out;
+  background-color: $papercut2;
+  color: $bg;
+  transition: 0.3s ease-in-out;
 }
 
 /*----------mixin til Showcase til @media only screen and (min-width: 901px) and (max-width:1200px)------*/
-@mixin sc_con_s ($width:17.2rem, $height:12.8rem){
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0.5rem 0.5em;
-    width: $width;
-    height: $height;
+@mixin sc_con_s($width:17.2rem, $height:12.8rem) {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0.5rem 0.5em;
+  width: $width;
+  height: $height;
 }
+
 /*--------------mixin til Showcase til @media screen and (min-width: 1201px)-------------*/
-@mixin sc_con_m ($width:26.8rem, $height:20rem){
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 0.5rem 0.5rem;
-    width: $width;
-    height: $height;
+@mixin sc_con_m($width:26.8rem, $height:20rem) {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0.5rem 0.5rem;
+  width: $width;
+  height: $height;
 }
-@mixin sc_text_m ($width:26.8rem, $height:20rem, $paddingtop:8rem){
-    width: $width;
-    height: $height;
-    padding-top: $paddingtop;
-    text-align: center;
+
+@mixin sc_text_m($width:26.8rem, $height:20rem, $paddingtop:8rem) {
+  width: $width;
+  height: $height;
+  padding-top: $paddingtop;
+  text-align: center;
 }
-@mixin sc_a_m ($padding: 7rem 5.5rem) {
-    text-decoration: none;
-    color: $font-color3;
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: $fontBroedText;
-    padding: $padding;
+
+@mixin sc_a_m($padding: 7rem 5.5rem) {
+  text-decoration: none;
+  color: $font-color3;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: $fontBroedText;
+  padding: $padding;
 }
 
 
 /*Til Moedos-siden*/
 /*Moesossiden*/
-@mixin team_kort{
-    position: relative;
-    width: 210px;
-    height: 230px;   
-    padding-inline-end: 30px;
-    border-radius: 30px;
-    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
-    background-color: #63A8F1;
+@mixin team_kort {
+  position: relative;
+  width: 210px;
+  height: 230px;
+  padding-inline-end: 30px;
+  border-radius: 30px;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #63A8F1;
 
-     @media only screen and (min-width: 700px) {
-     width: 280px;
-     height: 240px;
+  @media only screen and (min-width: 700px) {
+    width: 280px;
+    height: 240px;
 
-     }
-        
-}
-    
-    
-@mixin place_itemmoedos{
-    height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-     @media only screen and (min-width: 700px) {
-        height: 70vh;
-    }
+  }
 
 }
 
-@mixin img_placing{
+
+@mixin place_itemmoedos {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin img_placing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,19 +195,19 @@ $fontHeadings: "AlegreyaSans-Regular";
 }
 
 
-@mixin img_box{
-    width: 123px;
-    height: 135px;
-    border-radius: 20px;
-    border: 5px solid #3B3E9F;
-    background: #D9D9D9;
-    box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
+@mixin img_box {
+  width: 123px;
+  height: 135px;
+  border-radius: 20px;
+  border: 5px solid #3B3E9F;
+  background: #D9D9D9;
+  box-shadow: 0 8px 4px 0 rgba(0, 0, 0, 0.25);
 
-     @media only screen and (min-width: 700px){
-        width: 143px;
-        height: 155px;
-    }
-    
+  @media only screen and (min-width: 700px) {
+    width: 143px;
+    height: 155px;
+  }
+
 }
 
 
