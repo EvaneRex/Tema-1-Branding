@@ -1395,6 +1395,47 @@ padding: 10px;
   margin-left: 15%;
 }
 
+.baggrunds-bold{
+  width: 60px;
+  height: 60px;
+  background-color: #ff800b;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveBall 12s linear infinite;
+}
+
+@keyframes moveBall {
+  0%{
+    transform: translateX(0) translateY(0);
+  }
+ 
+
+  25%{
+    transform: translateX(300px) translateY(200px);
+  }
+
+ 35%{
+  transform: translateX(0) translateY(500px);
+ }
+ 
+ 50%{
+  transform: translateX(350px) translateY(600px);
+ }
+
+65%{
+  transform: translateX() translateY(800px);
+ }
+
+75%{
+  transform: translateX(0px) translateY(1200px);
+ }
+
+100%{
+  transform: translateX(1200px) translateY(-700);
+ }
+
+}
+
  .kort-indholdrikke{
   @include partial.place_itemmoedos;
  }
@@ -1443,47 +1484,6 @@ padding: 10px;
     padding-left: 8%;
     padding-right: 8%;
   }
-
-  .baggrunds-bold{
-    width: 60px;
-    height: 60px;
-    background-color: #ff800b;
-    border-radius: 50%;
-    position: absolute;
-    animation: moveBall 12s linear infinite;
-  }
-
-  @keyframes moveBall {
-    0%{
-      transform: translateX(0) translateY(0);
-    }
-   
-  
-    25%{
-      transform: translateX(900px) translateY(400px);
-   }
-  
-   35%{
-    transform: translateX(0) translateY(600px);
-  }
-   
-   50%{
-    transform: translateX(0) translateY(800px);
-  }
-  
-  65%{
-    transform: translateX(800px) translateY(0);
-  }
-  
-  75%{
-    transform: translateX(0px) translateY(-400px);
-  }
-  
-  100%{
-    transform: translateX(1200) translateY(-1200);
-  }
-  
-  }
   
   .kort-indholdrikke{
    width: 100%;
@@ -1509,6 +1509,38 @@ padding: 10px;
     width: 100%;
     grid-row: 2;
     grid-column: 2;
+  }
+
+  @keyframes moveBall {
+    0%{
+      transform: translateX(0) translateY(0);
+    }
+   
+  
+    25%{
+      transform: translateX(900px) translateY(400px);
+    }
+  
+   35%{
+    transform: translateX(0) translateY(600px);
+   }
+   
+   50%{
+    transform: translateX(0) translateY(800px);
+   }
+  
+  65%{
+    transform: translateX(800px) translateY(0);
+   }
+  
+  75%{
+    transform: translateX(0px) translateY(-400px);
+   }
+  
+  100%{
+    transform: translateX(1200) translateY(-1200);
+   }
+  
   }
 }
 
