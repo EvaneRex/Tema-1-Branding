@@ -163,10 +163,7 @@ header {
 }
 
 #hvem-er-vi {
-  font-size: 30pt;
-  color: partial.$font-color1;
-  font-family: partial.$fontHeadings;
-  margin: 0 auto;
+  @include partial.headings-mobile;
   padding: 10px;
 }
 
@@ -184,6 +181,22 @@ header {
   height: 200px;
 
 
+}
+
+.mds-working-companion{
+
+  h3{
+    @include partial.headings-mobile;
+    margin: 100px 15px 10px 15px;
+  }
+  p{
+    @include partial.p-mobile-style;
+    padding: 20px 15px 10px 15px;
+
+    a{
+      @include partial.a-hover;
+    }
+  }
 }
 
 video {
@@ -217,11 +230,7 @@ video {
   }
 
   #offer-heading {
-    margin: 0 auto;
-    font-size: 30pt;
-    color: partial.$font-color1;
-    font-family: partial.$fontHeadings;
-
+    @include partial.headings-mobile;
   }
 
 }
@@ -295,11 +304,13 @@ video {
 }
 
 #services-heading {
-  display: grid;
-  justify-content: center;
-  font-family: partial.$fontHeadings;
-  font-size: 30pt;
-  margin: 70px 0 30px 0;
+  @include partial.headings-mobile;
+  margin: 70px 15px 30px 15px;
+}
+
+.service-text {
+  @include partial.p-mobile-style;
+  padding: 10px 20px 70px 20px;
 }
 
 .services-boxes {
@@ -391,8 +402,22 @@ video {
 }
 
 .process-guide-section {
-  background: radial-gradient(#040126, #3B3E9F, #63A8F1, #FFFFFF);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(#fffafa, #3B3E9F, #0d056c);
+  box-shadow: 0 4px 10px #fffafa;
+
+  .process-guide-text {
+    h2 {
+      @include partial.headings-mobile($font-size: 1.5rem);
+      padding: 70px 15px 30px 15px;
+    }
+
+    p {
+      @include partial.p-mobile-style;
+      padding: 5px 15px 5px 15px;
+      text-align: left;
+
+    }
+  }
 }
 
 #mds-proces-guide {
@@ -413,15 +438,16 @@ video {
   padding-bottom: 50px;
 
 
-  h1{
-    font-size: 30pt;
-    font-family: partial.$fontHeadings;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 30px;
+  h1 {
+    @include partial.headings-mobile;
+    padding: 30px 20px 30px 50px;
+  }
+  .booking-text{
+    @include partial.p-mobile-style;
+    padding: 0 15px 30px 15px;
   }
 }
+
 .kontaktform {
   display: flex;
   flex-direction: column;
@@ -432,20 +458,21 @@ video {
   margin: 0 auto;
   border-radius: 30px;
   font-family: partial.$fontBroedText;
-  font-size:16pt;
+  font-size: 16pt;
   box-shadow: 0 4px 8px #2c3e50;
 
-  input,textarea, select{
+  input, textarea, select {
     display: flex;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
   }
-  p{
+
+  p {
     margin: 10px 0 5px 35px;
   }
 
-  input,select{
+  input, select {
     padding: 4px;
     border-radius: 10px;
     width: 224px;
@@ -455,36 +482,40 @@ video {
     font-family: partial.$fontHeadings;
     font-size: 14pt;
   }
+
   textarea {
     max-width: 224px;
     min-width: 224px;
-    max-height:52px;
+    max-height: 52px;
     min-height: 52px;
-    border-radius:10px;
+    border-radius: 10px;
     font-family: partial.$fontBroedText;
     padding: 5px;
     font-size: 12pt;
 
   }
-  #book-button{
-    @include partial.btn($width:130px, $height:40px);
+
+  #book-button {
+    @include partial.btn($width: 130px, $height: 40px);
     @include partial.a-hover;
     box-shadow: 0 4px 8px #2c3e50;
+   margin-top: 10px;
   }
 
 }
-.contact-booking{
+
+.contact-booking {
   display: grid;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
 
 
-  aside{
-padding: 10px;
+  aside {
+    padding: 10px;
   }
 
-  a{
+  a {
     text-decoration: none;
     padding: 10px;
     font-family: partial.$fontBroedText;
@@ -492,12 +523,13 @@ padding: 10px;
     color: partial.$font-color1;
   }
 
-  img:nth-of-type(2){
+  img:nth-of-type(2) {
     height: auto;
   }
-    img{
-      margin-right: 20px;
-      height: 40px;
+
+  img {
+    margin-right: 20px;
+    height: 40px;
   }
 }
 
@@ -637,7 +669,7 @@ padding: 10px;
   }
 
   #hvem-er-vi {
-    font-size: 44pt;
+    @include partial.headings-desktop;
   }
   video {
     width: 60%;
@@ -652,7 +684,6 @@ padding: 10px;
   .offer-boxes-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr;
     gap: 30px;
 
 
@@ -665,7 +696,7 @@ padding: 10px;
       grid-row: 1;
       grid-column: 2 / 4;
       padding-bottom: 20px;
-      font-size: 38pt;
+   @include partial.headings-desktop
 
     }
 
@@ -705,6 +736,18 @@ padding: 10px;
   .mds-animation {
     img:first-of-type {
       max-height: none;
+    }
+
+  }
+
+  .mds-working-companion {
+    h3 {
+      @include partial.headings-desktop;
+      padding-top: 70px;
+    }
+
+    p {
+      @include partial.p-desktop-style;
     }
 
   }
@@ -773,39 +816,56 @@ padding: 10px;
     }
 
   }
-  /*.....styling for services desktop.....*/
-  #services-heading {
-    font-size: 48pt;
-  }
-  .services-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 0 auto;
-    gap: 100px;
-    width: 90%;
-    max-width: 1300px;
-    overflow: hidden;
+  @media screen and (min-width: 1201px) {
+    /*.....styling for services desktop.....*/
+    #services-heading {
+      @include partial.headings-desktop;
+    }
+    .service-text {
+      @include partial.p-desktop-style;
+    }
+    .services-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      margin: 0 auto;
+      gap: 100px;
+      width: 90%;
+      max-width: 1300px;
+      overflow: hidden;
 
-    #konsultation-box, #junior-box, #premium-box, #pro-service-box {
-      //width: 100%;
-      height: 700px;
+      #konsultation-box, #junior-box, #premium-box, #pro-service-box {
+        height: 700px;
 
-      p:first-of-type {
-        font-size: 40px;
+        p:first-of-type {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 20pt;
+        }
       }
+    }
 
-      p {
-        font-size: 20pt;
+    #mds-proces-guide {
+      padding: 200px 0 200px 0;
+      height: 1800px;
+
+    }
+    .h2-service-page{
+          @include partial.headings-desktop;
+          margin: 0 auto;
+        }
+
+      .process-guide-text {
+        p {
+          @include partial.p-desktop-style;
+        }
       }
     }
   }
 
-
-  #mds-proces-guide {
-    padding: 200px 0 200px 0;
-    height: 1800px;
-  }
+@media screen and (min-width: 1201px) {
   /*.....styling for booking page desktop....*/
 
   .kontaktformular {
@@ -813,10 +873,12 @@ padding: 10px;
     padding-bottom: 50px;
 
 
-    h1{
-      font-size: 40pt;
+    h1 {
+      @include partial.headings-desktop;
 
-
+    }
+    .booking-text{
+      @include partial.p-desktop-style;
     }
   }
   .kontaktform {
@@ -825,52 +887,49 @@ padding: 10px;
     grid-template-columns: 1fr 1fr;
     width: 874px;
     height: 892px;
-    font-size:20pt;
+    font-size: 20pt;
 
-    p{
+    p {
       margin: 50px 0 10px 60px;
     }
 
-    input,select{
+    input, select {
       padding: 7px;
       width: 326px;
       height: 70px;
       font-size: 16pt;
     }
+
     textarea {
       max-width: 760px;
       min-width: 760px;
-      max-height:218px;
+      max-height: 218px;
       min-height: 218px;
       font-size: 16pt;
       font-family: partial.$fontBroedText;
-      padding:5px;
+      padding: 5px;
 
     }
+
     .column-span-4 {
       grid-column: span 2;
     }
-    #book-button{
+
+    #book-button {
       @include partial.btn();
       display: grid;
       grid-area: center;
     }
 
   }
-  .contact-booking{
-    a{
+  .contact-booking {
+    a {
       font-size: 30pt;
       padding-right: 70px;
     }
   }
-
 }
-  /*.....styling for homepage desktop ending.....*/
-
-
-
-
-
+/*.....styling for homepage desktop ending.....*/
 
 
 /*--------------------------------------Showcase-------------------------------------------*/
@@ -1339,13 +1398,11 @@ padding: 10px;
 }
 
 
-
 /*........Styling for Moedos-page........*/
-/* Moedos-siden starter*/ 
+/* Moedos-siden starter*/
 
 
-
-.overskriftmoedos-side h1{
+.overskriftmoedos-side h1 {
   font-size: 2.75rem;
   font-family: partial.$fontHeadings;
   color: partial.$font-color1;
@@ -1355,7 +1412,7 @@ padding: 10px;
   margin-top: 30px;
 }
 
-.overskriftmoedos-side p{
+.overskriftmoedos-side p {
   font-size: 1rem;
   font-family: partial.$fontBroedText;
   color: partial.$font-color1;
@@ -1368,11 +1425,11 @@ padding: 10px;
   width: 75%;
   margin-bottom: 2.5%;
   margin-top: 1%;
-  
-}
-    
 
-.teamkorttekst h3{
+}
+
+
+.teamkorttekst h3 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1384,7 +1441,7 @@ padding: 10px;
   margin-left: 15%;
 }
 
-.teamkorttekst p{
+.teamkorttekst p {
   font-family: partial.$fontBroedText;
   display: flex;
   justify-content: center;
@@ -1395,72 +1452,72 @@ padding: 10px;
   margin-left: 15%;
 }
 
- .kort-indholdrikke{
+.kort-indholdrikke {
   @include partial.place_itemmoedos;
- }
-
- .kort-indholdvictoria{
-  @include partial.place_itemmoedos;
- }
-
- .kort-indholdnanna{
-  @include partial.place_itemmoedos;
- }
-
- .kort-indholdmathilde{
-  @include partial.place_itemmoedos;
- }
-
- .team-kort{
-@include partial.team_kort;
- }
-
-.teamkortbillede{
-@include partial.img_placing;
 }
- 
-.teamkortbillede img{
-@include partial.img_box;
- }
+
+.kort-indholdvictoria {
+  @include partial.place_itemmoedos;
+}
+
+.kort-indholdnanna {
+  @include partial.place_itemmoedos;
+}
+
+.kort-indholdmathilde {
+  @include partial.place_itemmoedos;
+}
+
+.team-kort {
+  @include partial.team_kort;
+}
+
+.teamkortbillede {
+  @include partial.img_placing;
+}
+
+.teamkortbillede img {
+  @include partial.img_box;
+}
 
 /*........MEDIA til Moedos-page........*/
-@media screen and (min-width: 700px){
+@media screen and (min-width: 700px) {
 
-  .mo{
+  .mo {
     width: 100%;
     height: 1400px;
   }
 
- 
-  .overskriftmoedos-side h1{
+
+  .overskriftmoedos-side h1 {
     font-size: 3.8rem;
   }
- 
-  .kort-indholdrikke{
-  float: left;
-    width: 50%;
-    padding-left: 7%;
-    scale: 125%;
-  }
 
-  .kort-indholdvictoria{
-    float: right;
-    width: 50%;
-    scale: 125%;
-  }
-
-  .kort-indholdnanna{
+  .kort-indholdrikke {
     float: left;
     width: 50%;
     padding-left: 7%;
     scale: 125%;
   }
-  
-  .kort-indholdmathilde{
+
+  .kort-indholdvictoria {
     float: right;
     width: 50%;
     scale: 125%;
   }
- 
+
+  .kort-indholdnanna {
+    float: left;
+    width: 50%;
+    padding-left: 7%;
+    scale: 125%;
+  }
+
+  .kort-indholdmathilde {
+    float: right;
+    width: 50%;
+    scale: 125%;
+  }
+
 }
 

@@ -23,7 +23,7 @@ $fontHeadings: "AlegreyaSans-Regular";
     src: url("../fonts/Oxygen/Oxygen-Regular.ttf");
 }
 
-/*Mixins*/
+/*Mixins for homepage, booking and services */
 @mixin btn($width:12.8rem, $height:3.5rem){
     background-color: $cta;
     border-radius:70px;
@@ -45,6 +45,39 @@ $fontHeadings: "AlegreyaSans-Regular";
     &:hover{
         color: $papercut2;
     }
+}
+
+@mixin p-desktop-style{
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $fontBroedText;
+    font-size: 1.5rem;
+    color: $font-color1;
+
+}
+@mixin p-mobile-style{
+    line-height: 1.5;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $fontBroedText;
+    font-size: 1.2rem;
+    color: $font-color1;
+}
+@mixin headings-desktop{
+    font-family: $fontHeadings;
+    font-size: 4rem;
+    color: $font-color1;
+    display: flex;
+    justify-content: center;
+}
+
+@mixin headings-mobile ($font-size: 1.5rem){
+    font-family: $fontHeadings;
+    font-size: 2.5rem;
+    color: $font-color1;
+    display: flex;
+    justify-content: center;
 }
 
 /*-----------------------------------------Til Showcase--------------------------------------*/
