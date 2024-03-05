@@ -1395,6 +1395,8 @@ padding: 10px;
   margin-left: 15%;
 }
 
+/* Bold animation starter */ 
+
 .baggrunds-bold{
   width: 60px;
   height: 60px;
@@ -1434,10 +1436,14 @@ padding: 10px;
   transform: translateX(1200px) translateY(-700);
  }
 
+ /* Bold animation slutter */ 
+
+ 
 }
 
  .kort-indholdrikke{
   @include partial.place_itemmoedos;
+
  }
 
  .kort-indholdvictoria{
@@ -1463,6 +1469,16 @@ padding: 10px;
 .teamkortbillede img{
 @include partial.img_box;
  }
+
+.team-kort:hover{
+  border-radius: 50%;
+  border: 5px;
+  transform: translateY(-50px);
+}
+
+
+
+
 
 /*........MEDIA til Moedos-page........*/
 @media screen and (min-width: 700px){
@@ -1510,6 +1526,7 @@ padding: 10px;
     grid-row: 2;
     grid-column: 2;
   }
+    /* Bold animation Media */ 
 
   @keyframes moveBall {
     0%{
@@ -1542,6 +1559,7 @@ padding: 10px;
    }
   
   }
+  /* Bold animation media slutter */ 
 
   .teamkorttekst h3{
     font-size: 1.5rem;
@@ -1552,4 +1570,4 @@ padding: 10px;
   }
 }
 
-
+/*.......Moedos-page og Media ends........*/
