@@ -1400,10 +1400,10 @@ padding: 10px;
 .baggrunds-bold{
   width: 60px;
   height: 60px;
-  background-color: #ff800b;
+  background: url(../img/MDS\ BOLD.svg);
   border-radius: 50%;
   position: absolute;
-  animation: moveBall 12s linear infinite;
+  animation: moveBall 20s linear infinite;
 }
 
 @keyframes moveBall {
