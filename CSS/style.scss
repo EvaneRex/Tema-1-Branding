@@ -1443,6 +1443,16 @@ padding: 10px;
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  .baggrunds-bold{
+    width: 60px;
+    height: 60px;
+    background-color: #ff800b;
+    border-radius: 50%;
+    position: absolute;
+    animation: moveBall 12s linear infinite;
+  }
+  
   .kort-indholdrikke{
    width: 100%;
    grid-row: 1;
