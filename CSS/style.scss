@@ -1421,7 +1421,7 @@ video {
 
 
 .overskriftmoedos-side h1 {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-family: partial.$fontHeadings;
   color: partial.$font-color1;
   display: flex;
@@ -1432,7 +1432,7 @@ video {
 
 .overskriftmoedos-side p {
   @include partial.p-mobile-style;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: partial.$fontBroedText;
   color: partial.$font-color1;
   line-height: 1.5rem;
@@ -1446,6 +1446,7 @@ video {
 
   @media only screen and (min-width: 700px) {
     @include partial.p-desktop-style;
+    
   }
 
 }
@@ -1636,7 +1637,7 @@ video {
   }
 
   .teamkorttekst p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
