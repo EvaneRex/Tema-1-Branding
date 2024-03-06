@@ -425,6 +425,8 @@ video {
       @include partial.p-mobile-style;
       padding: 5px 15px 5px 15px;
       text-align: left;
+      //width: 80%;
+      //max-width: 800px;
 
     }
   }
@@ -434,7 +436,8 @@ video {
   display: grid;
   margin: 0 auto;
   padding: 100px 0 70px 0;
-  height: 800px;
+  width: 80%;
+  max-width: 800px;
 }
 
 
