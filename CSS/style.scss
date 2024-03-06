@@ -1548,10 +1548,16 @@ video {
   @include partial.img_box;
 }
 
+.team-kort:hover::before{
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #ff800b;
+}
 .team-kort:hover{
-  border-radius: 50%;
+  border-radius: 30%;
   border: 5px;
   transform: translateY(-50px);
+  box-shadow: 0 0 20px #ff800b;
+  
 }
 
 /*........MEDIA til Moedos-page........*/
