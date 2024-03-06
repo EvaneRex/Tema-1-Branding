@@ -1548,6 +1548,12 @@ video {
   @include partial.img_box;
 }
 
+.team-kort:hover{
+  border-radius: 50%;
+  border: 5px;
+  transform: translateY(-50px);
+}
+
 /*........MEDIA til Moedos-page........*/
 @media screen and (min-width: 700px) {
 
