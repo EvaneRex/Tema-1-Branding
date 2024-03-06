@@ -1024,15 +1024,15 @@ video {
   }
 
   .container_1 {
-    background-image: url(/img/sc_hjemmeside.png);
+    background-image: url(../img/sc_hjemmeside.png);
   }
 
   .container_2 {
-    background-image: url(/img/sc_logo.png);
+    background-image: url(../img/sc_logo.png);
   }
 
   .container_3 {
-    background-image: url(/img/sc_poster.png);
+    background-image: url(../img/sc_poster.png);
     height: 27.9rem;
 
     .sc_text {
@@ -1047,19 +1047,19 @@ video {
   }
 
   .container_4 {
-    background-image: url(/img/sc_animationer.png)
+    background-image: url(../img/sc_animationer.png)
   }
 
   .container_5 {
-    background-image: url(/img/sc_maskotter.png)
+    background-image: url(../img/sc_maskotter.png)
   }
 
   .container_6 {
-    background-image: url(/img/sc_videoer.png)
+    background-image: url(../img/sc_videoer.png)
   }
 
   .container_7 {
-    background-image: url(/img/sc_branding.png);
+    background-image: url(../img/sc_branding.png);
     height: 2.8rem;
 
     .sc_text {
@@ -1481,7 +1481,7 @@ video {
 .baggrunds-bold {
   width: 60px;
   height: 60px;
-  background: url('../img/mds-bold.svg');
+  background: url('img/mds-bold.svg');
   border-radius: 50%;
   position: absolute;
   animation: moveBall 20s linear infinite;
