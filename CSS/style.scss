@@ -213,12 +213,16 @@ video {
 }
 
 /* principles  section*/
-
+#offer-heading {
+  @include partial.headings-mobile;
+  padding-bottom: 30px;
+}
 .offer-boxes-section {
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  margin: 0 10px 0 10px;
+  margin: 0 auto;
+  max-width: 1000px;
 
 
   .purple {
@@ -230,9 +234,7 @@ video {
 
   }
 
-  #offer-heading {
-    @include partial.headings-mobile;
-  }
+
 
 }
 
@@ -267,7 +269,7 @@ video {
   .offer-text {
     grid-column: 1 / span 3;
     text-align: left;
-    padding: 0 25px 10px 25px;
+    padding: 0 25px 20px 25px;
     font-size: 16pt;
     font-family: partial.$fontBroedText;
     line-height: 1.1;
@@ -315,11 +317,10 @@ video {
 }
 
 .services-boxes {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 0 auto;
-  padding: 10px;
 
   #konsultation-box, #junior-box, #premium-box, #pro-service-box {
     display: grid;
@@ -408,7 +409,7 @@ video {
 
   .process-guide-text {
     h2 {
-      @include partial.headings-mobile($font-size: 1.5rem);
+      @include partial.headings-mobile;
       padding: 70px 15px 30px 15px;
     }
 
@@ -692,6 +693,9 @@ video {
 
   /*principles homepage*/
 
+  #offer-heading {
+    @include partial.headings-desktop;
+  }
 
   .offer-boxes-section {
     display: grid;
@@ -704,13 +708,6 @@ video {
       height: 300px;
     }
 
-    #offer-heading {
-      grid-row: 1;
-      grid-column: 2 / 4;
-      padding-bottom: 20px;
-      @include partial.headings-desktop
-
-    }
 
     .box1 {
       grid-row: 2;
@@ -859,23 +856,28 @@ video {
       }
     }
 
-    #mds-proces-guide {
-      padding: 200px 0 200px 0;
-      height: 1800px;
+    .process-guide-section {
+      .process-guide-text {
+        h2 {
+          @include partial.headings-desktop;
+          padding: 70px 15px 30px 15px;
+        }
 
-    }
-    .h2-service-page {
-      @include partial.headings-desktop;
-      margin: 0 auto;
-    }
+        p {
+          @include partial.p-desktop-style;
+          padding: 5px 15px 5px 15px;
+          text-align: left;
 
-    .process-guide-text {
-      p {
-        @include partial.p-desktop-style;
+        }
       }
     }
+
+
+
+
+    }
   }
-}
+
 
 @media screen and (min-width: 1201px) {
   /*.....styling for booking page desktop....*/

@@ -75,7 +75,7 @@ $fontHeadings: "AlegreyaSans-Regular";
   justify-content: center;
 }
 
-@mixin headings-mobile($font-size: 1.5rem) {
+@mixin headings-mobile {
   font-family: $fontHeadings;
   font-size: 2.5rem;
   color: $font-color1;
