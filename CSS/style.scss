@@ -127,7 +127,7 @@ header {
     margin: 0 auto;
   }
 
-  img {
+  #logo-animation-icon {
     padding-top: 100px;
   }
 
@@ -143,10 +143,18 @@ header {
     color: partial.$font-color2;
   }
 
-  //.gif-mobile {
-  //  display: none;
-  //}
 
+}
+
+.logo-animation-section {
+
+  .logo-animation-gif {
+    display: none;
+  }
+
+  .logo-animation-static {
+    display: block;
+  }
 }
 
 /* video-papercut section*/
@@ -217,6 +225,7 @@ video {
   @include partial.headings-mobile;
   padding-bottom: 30px;
 }
+
 .offer-boxes-section {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +242,6 @@ video {
     background-color: rgb(149, 194, 244);
 
   }
-
 
 
 }
@@ -551,11 +559,11 @@ video {
   .desktop-nav {
     display: none;
 
-    img:first-of-type{
+    img:first-of-type {
       display: none;
     }
 
-    a{
+    a {
       text-decoration: none;
       @include partial.a-hover
     }
@@ -569,16 +577,6 @@ video {
 
     input {
       display: none;
-      //border-radius: 50px;
-      //height: 25px;
-      //width: 130px;
-      //padding: 15px;
-      //background-color: transparent;
-      //color: partial.$font-color2;
-      //font-size: 22px;
-      //font-family: partial.$fontHeadings;
-      //border: 2px solid partial.$font-color2;
-      //margin: 10px;
 
     }
 
@@ -603,7 +601,6 @@ video {
       display: flex;
     }
   }
-
 }
 
 /*.....media query for desktop version.....*/
@@ -873,10 +870,8 @@ video {
     }
 
 
-
-
-    }
   }
+}
 
 
 @media screen and (min-width: 1201px) {
@@ -946,6 +941,19 @@ video {
 }
 
 /*.....styling for homepage desktop ending.....*/
+
+
+@media screen and (min-width: 988px) and (max-width: 988px) {
+  .logo-animation-section {
+    .logo-animation-gif {
+      display: block;
+    }
+
+    .logo-animation-static, #mds-heading, #slogan {
+      display: none;
+    }
+  }
+}
 
 
 /*--------------------------------------Showcase-------------------------------------------*/
