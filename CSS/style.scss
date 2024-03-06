@@ -974,14 +974,14 @@ video {
       margin: 0.5rem auto;
       padding: 0.2rem 0.2rem;
       color: partial.$font-color1;
+      width: 75%;
     }
 
     h1 {
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       font-family: partial.$fontHeadings;
       text-align: center;
       margin-top: 2rem;
-      width: 70%;
     }
 
     h2 {
@@ -989,15 +989,13 @@ video {
       font-size: 2rem;
       text-align: center;
       margin-top: 2rem;
-      width: 70%;
     }
 
     .p {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-family: partial.$fontBroedText;
       line-height: 1.5rem;
       text-align: left;
-      width: 60%;
     }
   }
 
@@ -1128,7 +1126,6 @@ video {
       .p {
         font-size: 1.2rem;
         line-height: 1.5rem;
-        width: 50%;
       }
 
       /*------billedenavigationen-----*/
@@ -1248,7 +1245,7 @@ video {
 }
 
 
-/*------------------Fra 1501px---------------------------*/
+/*------------------Fra 1201px---------------------------*/
 @media screen and (min-width: 1201px) {
   .sc_body {
     .sc_BG {
@@ -1257,7 +1254,6 @@ video {
 
       h1 {
         font-size: 4rem;
-        width: 80%;
       }
 
       h2 {
@@ -1267,7 +1263,6 @@ video {
       .p {
         font-size: 1.5rem;
         line-height: 2rem;
-        width: 50%;
       }
 
 
