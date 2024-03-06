@@ -71,7 +71,7 @@ header {
 
 
   img {
-    height: 38px;
+    height: 30px;
     margin: 10px;
   }
 
@@ -549,6 +549,15 @@ video {
 @media screen and (max-width: 1200px) {
   .desktop-nav {
     display: none;
+
+    img:first-of-type{
+      display: none;
+    }
+
+    a{
+      text-decoration: none;
+      @include partial.a-hover
+    }
   }
   /* styling for burgermenu when toggled*/
   .toggleShow {
